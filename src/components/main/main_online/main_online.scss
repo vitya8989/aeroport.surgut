@@ -1,0 +1,344 @@
+.main_online__top {
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/main/main_online/top_img.png') 82% center / cover no-repeat, #416FEF;
+  padding: 0 30px;
+
+  @media ($desktopSmall) {
+    padding: 0 12px;
+  }
+  @media ($tablet3) {
+    min-height: 82px;
+    background: url('../img/main/main_online/top_img_mob.png') left / 146px 100% no-repeat, #416FEF;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.main_online__top_img {
+  font-family: 'Parsek', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 31px;
+  color: #FFFFFF;
+  text-align: center;
+
+  @media ($tablet3) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media ($mobileMiddle) {
+    max-width: 188px;
+  }
+}
+.main_online__top_run_string {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  background: #416FEF;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  @media ($tablet3) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+.main_online__bottom {
+  padding: 100px 0;
+  background: url('../img/main/main_online/bg.jpg') center / cover no-repeat;
+  @media ($desktopSmall) {
+    padding: 0 0 46px;
+  }
+}
+
+.main_online__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main_online__head_row {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EDF3FA;
+  width: 100%;
+  @media ($desktopSmall) {
+    margin-top: 25px;
+  }
+  @media ($tablet3) {
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    border-bottom: none;
+  }
+}
+
+.main_online__head_left {
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+}
+
+.main_online__head_title {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+  @media ($desktopSmall) {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  @media ($tablet3) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+
+.main_online__head_group {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1360px) {
+    display: block;
+  }
+  @media ($desktopSmall) {
+    margin-top: 20px;
+  }
+  @media ($tablet3) {
+    margin-top: 10px;
+  }
+}
+
+.main_online__head_tabs {
+  margin-right: 80px;
+  display: flex;
+  margin-left: -25px;
+  @media (max-width: 1360px) {
+    margin-right: 40px;
+  }
+  @media ($tablet3) {
+    margin-right: 0;
+    margin-left: -15px;
+  }
+}
+.main_online__head_tab {
+  margin-left: 25px;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: rgba(66, 92, 127, 0.6);
+
+  @media ($desktopSmall) {
+    font-size: 36px;
+  }
+  @media ($tablet3) {
+    margin-left: 15px;
+    font-size: 26px;
+  }
+
+  &.active {
+    pointer-events: none;
+    color: #264D83;
+  }
+}
+.main_online__head_link {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #DB1E35;
+  padding: 14px 0 4px 55px;
+  background: url('../img/icons/flightradar.svg') left 10px / 40px 40px no-repeat;
+
+  @media (max-width: 1360px) {
+    margin-top: 20px;
+    display: inline-block;
+  }
+  @media ($tablet3) {
+    font-size: 16px;
+    line-height: 130%;
+    padding: 4px 0 4px 43px;
+    background: url('../img/icons/flightradar.svg') left top / 28px 28px no-repeat;
+  }
+}
+.main_online__head_right {
+  display: flex;
+  margin-left: -70px;
+  @media ($desktopSmall) {
+    margin-left: -35px;
+  }
+}
+.main_online__head_info {
+  margin-left: 70px;
+  @media ($desktopSmall) {
+    margin-left: 35px;
+  }
+}
+.main_online__head_weather {
+  display: flex;
+  align-items: center;
+}
+.main_online__head_weather_value {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+  @media ($tablet3) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
+.main_online__head_weather_icon {
+  width: 34px;
+  height: 32px;
+  margin-left: 5px;
+
+  @media ($tablet3) {
+    height: 21px;
+  }
+
+  &.this--cloud {
+    background: url('../img/icons/cloud.svg') center / contain no-repeat;
+  }
+}
+.main_online__head_time {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #416FEF;
+  margin-top: 5px;
+
+  @media ($tablet3) {
+    font-size: 20px;
+  }
+
+  &.this--surgut {
+    color: #DB1E35;
+  }
+}
+.main_online__head_time_label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.main_online__flights {
+  width: calc(100% - 110px - 340px);
+  margin-top: 40px;
+  margin-right: 110px;
+
+  @media ($desktopSuperBig) {
+    margin-right: 40px;
+    width: calc(100% - 40px - 340px);
+  }
+  @media ($desktopSmall) {
+    margin-right: 20px;
+    width: calc(100% - 20px - 340px);
+  }
+  @media ($tablet2) {
+    width: calc(100% - 20px - 280px);
+  }
+  @media ($tablet3) {
+    margin-right: 0;
+    margin-top: 0;
+    width: 100%;
+  }
+}
+.main_online__tab_body {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+.main_online__flight {
+  margin-bottom: 10px;
+}
+.main_online__flight_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  padding: 15px;
+  color: #DB1E35;
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+
+  svg {
+    margin-left: 20px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.main_online__attentions {
+  width: 340px;
+  flex: 0 0 auto;
+  margin-top: 40px;
+
+  @media ($tablet2) {
+    width: 280px;
+  }
+
+  @media ($tablet3) {
+    flex: 1 1 auto;
+    width: 100%;
+    order: -1;
+    margin: 0 -12px;
+    padding: 20px 14px;
+    background: #E9EBED;
+  }
+}
+.main_online__attentions_body {
+  margin-bottom: -10px;
+  width: 340px;
+
+  @media ($tablet2) {
+    width: 280px;
+  }
+
+  @media ($tablet3) {
+    width: auto;
+  }
+
+  &.this--fixed {
+    position: fixed;
+    top: 335px;
+    @media (max-height: 940px) {
+      top: 250px;
+    }
+    @media (max-height: 840px) {
+      top: 190px;
+    }
+    @media ($desktopSmall) {
+      top: 130px!important;
+    }
+
+    @media ($tablet3) {
+      position: static;
+    }
+  }
+}
+.main_online__attention {
+  margin-bottom: 10px;
+}

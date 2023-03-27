@@ -1,0 +1,212 @@
+.flight {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+
+  @media ($desktopSuperBig) {
+    padding: 15px 20px;
+  }
+  @media (max-width: 1300px) {
+    display: block;
+  }
+  @media ($tablet3) {
+    padding: 15px;
+  }
+}
+.flight__left {
+  display: flex;
+  align-items: center;
+  width: 35.53%;
+
+  @media (max-width: 1300px) {
+    width: 100%;
+    cursor: pointer;
+    align-items: flex-start;
+  }
+  @media ($desktopSmall) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.flight__time,
+.flight__city,
+.flight__value {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2D3F57;
+}
+.flight__arrow {
+  display: none;
+
+  @media ($desktopSmall) {
+    display: block;
+    width: 24px;
+    height: 13px;
+    flex: 0 0 auto;
+    margin-top: 8px;
+    margin-left: 10px;
+    background: url('../img/icons/gray_arrow_down.svg') center / 100% 100% no-repeat;
+    transition: transform 0.25s;
+
+    .flight__left.active & {
+      transform: rotate(180deg);
+    }
+  }
+}
+.flight__time {
+  width: 60px;
+  flex: 0 0 auto;
+}
+.flight__city {
+  width: calc(100% - 80px);
+  margin-left: 20px;
+  text-transform: uppercase;
+  word-break: break-word;
+
+  @media ($desktopSuperBig) {
+    margin-left: 15px;
+    width: calc(100% - 15px);
+  }
+  @media ($desktopSmall) {
+    width: 100%;
+    order: 3;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+.flight__right {
+  display: flex;
+  align-items: center;
+  width: calc(64.47% - 20px);
+  margin-left: 20px;
+
+  @media ($desktopSuperBig) {
+    width: calc(64.47% - 15px);
+    margin-left: 15px;
+  }
+  @media (max-width: 1300px) {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  @media ($desktopSmall) {
+    overflow: hidden;
+    margin-top: 0;
+    display: block;
+    transition: max-height 0.25s;
+  }
+}
+.flight__label {
+  display: none;
+
+  @media ($desktopSmall) {
+    display: block;
+    margin-right: 15px;
+    width: calc(47% - 15px);
+  }
+}
+.flight__value {
+  @media ($desktopSmall) {
+    width: 53%;
+  }
+}
+.flight__num {
+  text-align: center;
+  width: 110px;
+  flex: 0 0 auto;
+
+  @media ($desktopSuperBig) {
+    width: 100px;
+  }
+  @media (max-width: 1300px) {
+    text-align: left;
+  }
+  @media ($desktopSmall) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-top: 10px;
+  }
+}
+.flight__img_wr {
+  margin-left: 70px;
+  flex: 0 0 auto;
+
+  @media ($desktopSuperBig) {
+    margin-left: 15px;
+  }
+  @media ($desktopSmall) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+.flight__value.this--img {
+  width: 90px;
+  height: 40px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.flight__desk {
+  margin-left: 70px;
+  text-align: center;
+  width: 105px;
+  flex: 0 0 auto;
+
+  @media ($desktopSuperBig) {
+    margin-left: 15px;
+  }
+  @media ($desktopSmall) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 0;
+    margin-top: 8px;
+    text-align: left;
+  }
+}
+.flight__status {
+  width: calc(100% - 465px);
+  margin-left: 20px;
+
+  @media ($desktopSuperBig) {
+    margin-left: 15px;
+    width: calc(100% - 340px);
+  }
+  @media ($desktopSmall) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 0;
+    margin-top: 8px;
+    text-align: left;
+  }
+}
+.flight__fact_time {
+  margin-left: 70px;
+  text-align: center;
+  width: 105px;
+  flex: 0 0 auto;
+
+  @media ($desktopSuperBig) {
+    margin-left: 15px;
+  }
+  @media ($desktopSmall) {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 0;
+    margin-top: 8px;
+    text-align: left;
+  }
+}

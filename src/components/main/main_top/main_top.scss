@@ -1,0 +1,125 @@
+.main_top {
+  height: 100vh;
+  position: relative;
+
+  .container {
+    height: 100%;
+  }
+}
+.main_top__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.main_top__content {
+  position: relative;
+  height: 100%;
+  @media ($tablet3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+  }
+}
+.main_top__title_wr {
+  position: absolute;
+  left: 0;
+  top: 30%;
+
+  @media ($tablet3) {
+    position: static;
+  }
+}
+.main_top__title {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 600;
+  font-size: 230px;
+  line-height: 276px;
+  color: #F9F4F4;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+
+  @media ($desktopBig) {
+    font-size: 160px;
+    line-height: 180px;
+  }
+
+  @media ($tablet2) {
+    font-size: 100px;
+    line-height: 110px;
+  }
+
+  @media ($tablet3) {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+.main_top__subtitle {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  margin-left: 15px;
+  margin-top: 30px;
+
+  @media ($desktopBig) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  @media ($tablet2) {
+    max-width: 300px;
+  }
+  @media ($tablet3) {
+    margin-left: 0;
+    margin-top: 10px;
+    max-width: none;
+  }
+}
+.main_top__btn {
+  position: absolute;
+  bottom: 92px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid #416FEF;
+  border-radius: 5px;
+  padding: 20px 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+
+  @media ($desktopBig) {
+    bottom: 40px;
+  }
+  @media ($tablet3) {
+    position: static;
+    margin: 40px auto 0;
+    transform: translateX(0);
+    line-height: 21px;
+    font-weight: 500;
+    padding: 15px 25px;
+    justify-content: center;
+  }
+
+  @media ($mobileMiddle) {
+    width: 100%;
+  }
+
+  svg {
+    margin-right: 20px;
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,90 @@
+@import "null";
+@import "variables";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "fonts";
+
+body {
+	font-family: Verdana, sans-serif;
+	font-weight: 400;
+	color: #2D3F57;
+	background: #ffffff;
+
+	&.this--overflow {
+		overflow: hidden;
+	}
+}
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	max-width: 1780px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	@media ($desktopSmall) {
+		padding: 0 12px;
+	}
+}
+main {
+	flex: 1 0 auto;
+	background: #ffffff;
+	padding-top: 118px;
+	@media (max-width: 1760px) {
+		padding-top: 175px;
+	}
+	@media ($desktopSmall) {
+		padding-top: 118px;
+	}
+	@media ($tablet3) {
+		padding-top: 69px;
+	}
+
+	&.this--main {
+		padding-top: 0;
+	}
+}
+
+.section {
+	padding: 104px 0;
+	background: #ffffff;
+	@media ($desktopSmall) {
+		padding: 60px 0;
+	}
+	@media ($desktopSmall) {
+		padding: 40px 0;
+	}
+	&.this--top {
+		padding-bottom: 0;
+	}
+	&.this--bottom {
+		padding-top: 0;
+	}
+}
+
+@import "./blocks/flight";
+@import "./blocks/attention";
+
+@import "../components/header/header";
+@import "../components/footer/footer";
+
+@import "../components/main/main_top/main_top";
+@import "../components/main/main_online/main_online";
+
+
+
+.hueta {
+	height: 1000px;
+}
