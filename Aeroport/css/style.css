@@ -155,8 +155,7 @@ main.this--main {
 }
 
 .section {
-  padding: 104px 0;
-  background: #ffffff;
+  padding: 100px 0;
 }
 
 .section.this--top {
@@ -273,6 +272,21 @@ main.this--main {
   margin-left: 20px;
 }
 
+.flight__status .flight__value {
+  text-align: center;
+}
+
+.flight__status .flight__value p {
+  font-family: 'Verdana', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+  text-align: center;
+  margin-top: 5px;
+}
+
 .flight__fact_time {
   margin-left: 70px;
   text-align: center;
@@ -370,6 +384,34 @@ main.this--main {
   font-size: 16px;
   line-height: 27px;
   color: #2D3F57;
+}
+
+.h2_title_line {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: #264D83;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #A0CEFF;
+}
+
+.pagination_bullets.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+  background: #8FAFC2;
+  border-radius: 2px;
+  width: 18px;
+  height: 6px;
+  opacity: 1;
+  -webkit-transition: width 0.25s;
+  -o-transition: width 0.25s;
+  transition: width 0.25s;
+  margin: 0 5px;
+}
+
+.pagination_bullets.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 32px;
+  background: #2761D1;
 }
 
 .header {
@@ -838,8 +880,7 @@ main.this--main {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #416FEF;
+  background: #DB1E35;
   border-radius: 5px;
   padding: 20px 25px;
   font-weight: 700;
@@ -852,6 +893,13 @@ main.this--main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.main_top__btn:active {
+  background: #264D83 !important;
 }
 
 .main_top__btn svg {
@@ -1071,12 +1119,30 @@ main.this--main {
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
+  -webkit-transition: background 0.25s, color 0.25s;
+  -o-transition: background 0.25s, color 0.25s;
+  transition: background 0.25s, color 0.25s;
+}
+
+.main_online__flight_link:active {
+  background: #2D3F57 !important;
+  color: #ffffff !important;
+}
+
+.main_online__flight_link:active svg path {
+  fill: #ffffff !important;
 }
 
 .main_online__flight_link svg {
   margin-left: 20px;
   width: 25px;
   height: 25px;
+}
+
+.main_online__flight_link svg path {
+  -webkit-transition: fill 0.25s;
+  -o-transition: fill 0.25s;
+  transition: fill 0.25s;
 }
 
 .main_online__attentions {
@@ -1101,8 +1167,508 @@ main.this--main {
   margin-bottom: 10px;
 }
 
-.height {
-  height: 1000px;
+.main_airport {
+  background: #ffffff;
+}
+
+.main_airport__row {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -20px;
+}
+
+.main_airport__left,
+.main_airport__right {
+  margin-left: 20px;
+  width: calc(50% - 20px);
+}
+
+.main_airport__left_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -20px;
+  margin-bottom: -20px;
+}
+
+.main_airport__left_row .main_airport__link {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: calc(33.333% - 20px);
+  padding: 36px 30px 33px;
+  min-height: 272px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main_airport__left_row .main_airport__link.this--100 {
+  width: calc(100% - 20px);
+  padding: 30px 30px 35px;
+  min-height: 302px;
+  position: relative;
+}
+
+.main_airport__left_row .main_airport__link.this--100 .main_airport__link_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 352px;
+  height: 302px;
+}
+
+.main_airport__left_row .main_airport__link.this--100 .main_airport__link_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main_airport__left_row .main_airport__link.this--100 .main_airport__link_title {
+  font-size: 32px;
+  line-height: 130%;
+  position: relative;
+  z-index: 2;
+}
+
+.main_airport__left_row .main_airport__link.this--100 .main_airport__link_text {
+  max-width: calc(100% - 340px);
+}
+
+.main_airport__link {
+  background: #E8F3FF;
+  border-radius: 10px;
+  -webkit-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+  overflow: hidden;
+}
+
+.main_airport__link_title {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.main_airport__link_text {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+  margin-top: 16px;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.main_airport__link_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2761D1;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+  margin-top: 10px;
+}
+
+.main_airport__link_btn svg {
+  width: 25px;
+  height: 25px;
+  margin-left: 20px;
+}
+
+.main_airport__link_btn svg path {
+  -webkit-transition: fill 0.25s;
+  -o-transition: fill 0.25s;
+  transition: fill 0.25s;
+}
+
+.main_airport__right .main_airport__link {
+  display: block;
+  height: 100%;
+  padding: 30px;
+  position: relative;
+}
+
+.main_airport__right .main_airport__link .main_airport__link_title {
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.main_airport__right .main_airport__link .main_airport__link_btn {
+  margin-top: 34px;
+}
+
+.main_airport__right .main_airport__link .main_airport__link_img {
+  position: absolute;
+  left: 29px;
+  bottom: 15px;
+  width: 457px;
+  height: 331px;
+  z-index: 2;
+}
+
+.main_airport__right .main_airport__link .main_airport__link_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main_airport__right .main_airport__link .main_airport__link_bg_img {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 657px;
+  height: 542px;
+  top: 40px;
+  right: 0;
+  -webkit-transition: opacity 0.25s, visibility 0.25s;
+  -o-transition: opacity 0.25s, visibility 0.25s;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.main_airport__right .main_airport__link .main_airport__link_bg_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main_about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 241, 255, 0.8)), color-stop(0.01%, rgba(229, 241, 255, 0.5)), to(rgba(229, 241, 255, 0.9)));
+  background: -o-linear-gradient(top, rgba(229, 241, 255, 0.8) 0%, rgba(229, 241, 255, 0.5) 0.01%, rgba(229, 241, 255, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(229, 241, 255, 0.8) 0%, rgba(229, 241, 255, 0.5) 0.01%, rgba(229, 241, 255, 0.9) 100%);
+}
+
+.main_about__slider_box {
+  margin-top: 60px;
+  position: relative;
+  padding-bottom: 66px;
+}
+
+.main_about__slider {
+  overflow: hidden;
+}
+
+.main_about_slide {
+  height: auto;
+}
+
+.main_about_slide__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.main_about_slide__num {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+  color: #BEC4C8;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.main_about_slide__content {
+  margin-top: 32px;
+  position: relative;
+  min-height: 526px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px 40px 20px;
+  -webkit-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.main_about_slide__content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.main_about_slide__content ul {
+  list-style-type: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.25s, visibility 0.25s;
+  -o-transition: opacity 0.25s, visibility 0.25s;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.main_about_slide__content ul li {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.main_about_slide__text {
+  margin-top: 32px;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #2D3F57;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.main_about__slider_pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.main_about__slider_next,
+.main_about__slider_prev {
+  position: absolute;
+  top: 40%;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.main_about__slider_next svg,
+.main_about__slider_prev svg {
+  width: 100%;
+  height: 100%;
+}
+
+.main_about__slider_next svg path,
+.main_about__slider_prev svg path {
+  -webkit-transition: fill 0.25s;
+  -o-transition: fill 0.25s;
+  transition: fill 0.25s;
+}
+
+.main_about__slider_next {
+  right: -44px;
+}
+
+.main_about__slider_prev {
+  left: -44px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.main_info {
+  background: #ffffff;
+}
+
+.main_info__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -60px;
+  margin-bottom: -60px;
+}
+
+.main_info__link {
+  margin-left: 60px;
+  margin-bottom: 60px;
+  width: calc(50% - 60px);
+}
+
+.main_info__link.this--100 {
+  width: calc(100% - 60px);
+}
+
+.main_info__link.this--100 .main_info__link_img {
+  padding-top: 23.25%;
+}
+
+.main_info__link_title {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #2D3F57;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.main_info__link_title span {
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  margin-left: 15px;
+  background: url("../img/icons/blue_arrow_right_with_top.svg") center/100% 100% no-repeat;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.25s, visibility 0.25s;
+  -o-transition: opacity 0.25s, visibility 0.25s;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.main_info__link_img {
+  margin-top: 30px;
+  padding-top: 48.19%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.main_info__link_img img {
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main_branches {
+  background: #ffffff;
+}
+
+.main_banches__links {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+}
+
+.main_banches__links_left {
+  margin-left: 30px;
+  width: calc(33.333% - 30px);
+}
+
+.main_banches__links_left .main_banches__link {
+  height: 100%;
+}
+
+.main_banches__links_left .main_banches__link span {
+  color: #FFFFFF;
+}
+
+.main_banches__links_right {
+  margin-left: 30px;
+  width: calc(66.666% - 30px);
+}
+
+.main_banches__links_right_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+
+.main_banches__links_right_row .main_banches__link {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: calc(50% - 30px);
+  min-height: 345px;
+}
+
+.main_banches__links_right_row .main_banches__link.this--100 {
+  width: calc(100% - 30px);
+  min-height: 375px;
+}
+
+.main_banches__links_right_row .main_banches__link.this--100 span {
+  color: #FFFFFF;
+}
+
+.main_banches__link {
+  display: block;
+  position: relative;
+  padding: 30px 40px;
+  -webkit-box-shadow: 0 0 20px rgba(37, 59, 71, 0.05);
+          box-shadow: 0 0 20px rgba(37, 59, 71, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main_banches__link span {
+  position: relative;
+  z-index: 2;
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #2D3F57;
+}
+
+.main_banches__link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  -o-transition: transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
 }
 
 @media (min-width: 1100.1px) {
@@ -1149,6 +1715,103 @@ main.this--main {
   .header__btn:hover.this--eye svg *,
   .header__btn:hover.this--search svg * {
     stroke: #DB1E35;
+  }
+
+  .main_top__btn:hover {
+    background: #416FEF;
+  }
+
+  .main_online__flight_link:hover {
+    background: #DB1E35;
+    color: #ffffff;
+  }
+
+  .main_online__flight_link:hover svg path {
+    fill: #ffffff;
+  }
+
+  .main_airport__link:hover {
+    background: #2761D1;
+  }
+
+  .main_airport__link:hover .main_airport__link_title {
+    color: #ffffff;
+  }
+
+  .main_airport__link:hover .main_airport__link_text {
+    color: #ffffff;
+  }
+
+  .main_airport__link:hover .main_airport__link_btn {
+    color: #ffffff;
+  }
+
+  .main_airport__link:hover .main_airport__link_btn svg path {
+    fill: #ffffff;
+  }
+
+  .main_airport__link:hover .main_airport__link_bg_img {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .main_about_slide__body:hover .main_about_slide__num {
+    color: #2761D1;
+  }
+
+  .main_about_slide__body:hover .main_about_slide__text {
+    color: #2761D1;
+  }
+
+  .main_about_slide__body:hover .main_about_slide__content {
+    background: rgba(7, 27, 66, 0.7);
+  }
+
+  .main_about_slide__body:hover .main_about_slide__content ul {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .main_about__slider_next:hover svg path,
+  .main_about__slider_prev:hover svg path {
+    fill: #DB1E35;
+  }
+
+  .main_info__link:hover .main_info__link_title {
+    color: #416FEF;
+  }
+
+  .main_info__link:hover .main_info__link_title span {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .main_info__link:hover .main_info__link_img img {
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+
+  .main_banches__link:hover img {
+    -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+}
+
+@media (max-width: 1870px) {
+  .main_about__slider_next,
+  .main_about__slider_prev {
+    top: -30px;
+  }
+
+  .main_about__slider_next {
+    right: 0;
+  }
+
+  .main_about__slider_prev {
+    left: auto;
+    right: 45px;
   }
 }
 
@@ -1231,6 +1894,18 @@ main.this--main {
     margin-right: 40px;
     width: calc(100% - 40px - 340px);
   }
+
+  .main_airport__left_row .main_airport__link.this--100 .main_airport__link_img {
+    top: 45px;
+  }
+
+  .main_about_slide__content {
+    padding: 30px 30px 20px;
+  }
+
+  .main_about_slide__text {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 1500px) {
@@ -1246,6 +1921,47 @@ main.this--main {
 
   .main_top__btn {
     bottom: 40px;
+  }
+
+  .main_airport__row {
+    margin-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .main_airport__left,
+  .main_airport__right {
+    width: auto;
+    margin-left: 0;
+  }
+
+  .main_airport__left {
+    margin-top: 20px;
+  }
+
+  .main_airport__right {
+    min-height: 302px;
+  }
+
+  .main_airport__right .main_airport__link {
+    min-height: 302px;
+  }
+
+  .main_airport__right .main_airport__link .main_airport__link_img {
+    left: 200px;
+    bottom: 5px;
+    width: 396px;
+    height: 285px;
+  }
+
+  .main_airport__right .main_airport__link .main_airport__link_bg_img {
+    top: -40px;
+  }
+
+  .main_about_slide__content {
+    padding: 30px 20px 20px;
   }
 }
 
@@ -1410,6 +2126,14 @@ main.this--main {
     width: auto;
     margin-left: 0;
     margin-top: 8px;
+    text-align: left;
+  }
+
+  .flight__status .flight__value {
+    text-align: left;
+  }
+
+  .flight__status .flight__value p {
     text-align: left;
   }
 
@@ -1684,6 +2408,45 @@ main.this--main {
   .main_online__attentions_body.this--fixed {
     top: 130px !important;
   }
+
+  .main_airport__right .main_airport__link .main_airport__link_bg_img {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    height: 361px;
+    width: 438px;
+  }
+
+  .main_about_slide__content {
+    min-height: 0;
+    padding-top: 129.55%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .main_about_slide__content ul {
+    display: none;
+  }
+
+  .main_info__content {
+    margin-left: -30px;
+    margin-bottom: -30px;
+  }
+
+  .main_info__link {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+
+  .main_info__link.this--100 {
+    width: calc(100% - 30px);
+  }
+
+  .main_info__link_img {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 1100px) and (max-width: 768px) {
@@ -1747,6 +2510,18 @@ main.this--main {
 
   .attention__img img {
     position: static;
+  }
+
+  .h2_title_line {
+    padding-bottom: 0;
+    font-size: 22px;
+    line-height: 135%;
+    border-bottom: none;
+  }
+
+  .pagination_bullets.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+    height: 4px;
+    margin: 0 3px;
   }
 
   .header {
@@ -1963,6 +2738,166 @@ main.this--main {
 
   .main_online__attentions_body.this--fixed {
     position: static;
+  }
+
+  .main_airport__row {
+    margin-top: 20px;
+  }
+
+  .main_airport__left {
+    margin-top: 10px;
+  }
+
+  .main_airport__left_row {
+    margin-left: 0;
+    margin-bottom: -10px;
+  }
+
+  .main_airport__left_row .main_airport__link {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    min-height: 120px;
+    padding: 16px 16px 22px;
+  }
+
+  .main_airport__left_row .main_airport__link.this--100 {
+    width: 100%;
+    padding: 16px 16px 52px;
+    min-height: 200px;
+  }
+
+  .main_airport__left_row .main_airport__link.this--100 .main_airport__link_img {
+    top: auto;
+    bottom: -15px;
+    width: 148px;
+    height: 129px;
+  }
+
+  .main_airport__left_row .main_airport__link.this--100 .main_airport__link_title {
+    font-size: 18px;
+    line-height: 135%;
+  }
+
+  .main_airport__left_row .main_airport__link.this--100 .main_airport__link_text {
+    max-width: none;
+  }
+
+  .main_airport__link_title {
+    font-size: 18px;
+    line-height: 135%;
+  }
+
+  .main_airport__link_text {
+    font-size: 15px;
+    line-height: 135%;
+  }
+
+  .main_airport__link_btn {
+    font-size: 14px;
+    line-height: 170%;
+  }
+
+  .main_airport__link_btn svg {
+    width: 18px;
+    height: 18px;
+    margin-left: 16px;
+  }
+
+  .main_airport__right {
+    min-height: 200px;
+  }
+
+  .main_airport__right .main_airport__link {
+    padding: 16px 16px 22px;
+    min-height: 200px;
+  }
+
+  .main_airport__right .main_airport__link .main_airport__link_title {
+    font-size: 18px;
+    line-height: 135%;
+  }
+
+  .main_airport__right .main_airport__link .main_airport__link_btn {
+    margin-top: 14px;
+  }
+
+  .main_airport__right .main_airport__link .main_airport__link_img {
+    width: 177px;
+    height: 139px;
+    right: 0;
+    left: auto;
+  }
+
+  .main_airport__right .main_airport__link .main_airport__link_bg_img {
+    height: 242px;
+    width: 297px;
+    top: 8px;
+    right: -144px;
+  }
+
+  .main_about {
+    overflow: hidden;
+  }
+
+  .main_about__slider_box {
+    margin-top: 20px;
+    padding-bottom: 24px;
+  }
+
+  .main_about__slider {
+    overflow: visible;
+  }
+
+  .main_about_slide {
+    width: 189px;
+  }
+
+  .main_about_slide__num {
+    font-size: 26px;
+    line-height: 130%;
+  }
+
+  .main_about_slide__content {
+    margin-top: 10px;
+    height: 245px;
+  }
+
+  .main_about_slide__text {
+    font-size: 18px;
+    line-height: 135%;
+    margin-top: 15px;
+  }
+
+  .main_about__slider_next,
+  .main_about__slider_prev {
+    display: none;
+  }
+
+  .main_info__content {
+    margin-left: 0;
+  }
+
+  .main_info__link {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .main_info__link.this--100 {
+    width: 100%;
+  }
+
+  .main_info__link.this--100 .main_info__link_img {
+    padding-top: 48.31%;
+  }
+
+  .main_info__link_title {
+    font-size: 18px;
+    line-height: 135%;
+  }
+
+  .main_info__link_img {
+    padding-top: 48.31%;
   }
 }
 

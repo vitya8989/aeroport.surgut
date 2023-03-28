@@ -191,6 +191,26 @@
     margin-top: 8px;
     text-align: left;
   }
+
+  .flight__value {
+    text-align: center;
+    @media ($desktopSmall) {
+      text-align: left;
+    }
+    p {
+      font-family: 'Verdana', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: #2D3F57;
+      text-align: center;
+      margin-top: 5px;
+      @media ($desktopSmall) {
+        text-align: left;
+      }
+    }
+  }
 }
 .flight__fact_time {
   margin-left: 70px;

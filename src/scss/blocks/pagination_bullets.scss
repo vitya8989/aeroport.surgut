@@ -1,0 +1,21 @@
+.pagination_bullets.swiper-pagination-bullets.swiper-pagination-horizontal {
+  .swiper-pagination-bullet {
+    background: #8FAFC2;
+    border-radius: 2px;
+    width: 18px;
+    height: 6px;
+    opacity: 1;
+    transition: width 0.25s;
+    margin: 0 5px;
+
+    @media ($tablet3) {
+      height: 4px;
+      margin: 0 3px;
+    }
+
+    &.swiper-pagination-bullet-active {
+      width: 32px;
+      background: #2761D1;
+    }
+  }
+}

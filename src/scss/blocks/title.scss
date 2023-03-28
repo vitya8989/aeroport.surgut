@@ -1,0 +1,17 @@
+.h2_title_line {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: #264D83;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #A0CEFF;
+
+  @media ($tablet3) {
+    padding-bottom: 0;
+    font-size: 22px;
+    line-height: 135%;
+    border-bottom: none;
+  }
+}

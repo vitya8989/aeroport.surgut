@@ -89,8 +89,7 @@
   bottom: 92px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid #416FEF;
+  background: #DB1E35;
   border-radius: 5px;
   padding: 20px 25px;
   font-weight: 700;
@@ -99,6 +98,17 @@
   color: #FFFFFF;
   display: flex;
   align-items: center;
+  transition: background 0.25s;
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      background: #416FEF;
+    }
+  }
+
+  &:active {
+    background: #264D83!important;
+  }
 
   @media ($desktopBig) {
     bottom: 40px;

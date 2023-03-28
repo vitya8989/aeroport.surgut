@@ -58,8 +58,7 @@ main {
 }
 
 .section {
-	padding: 104px 0;
-	background: #ffffff;
+	padding: 100px 0;
 	@media ($desktopSmall) {
 		padding: 60px 0;
 	}
@@ -76,15 +75,16 @@ main {
 
 @import "./blocks/flight";
 @import "./blocks/attention";
+@import "./blocks/title";
+@import "./blocks/pagination_bullets";
 
 @import "../components/header/header";
 @import "../components/footer/footer";
 
 @import "../components/main/main_top/main_top";
 @import "../components/main/main_online/main_online";
+@import "../components/main/main_airport/main_airport";
+@import "../components/main/main_about/main_about";
+@import "../components/main/main_info/main_info";
+@import "../components/main/main_branches/main_branches";
 
-
-
-.height {
-	height: 1000px;
-}
