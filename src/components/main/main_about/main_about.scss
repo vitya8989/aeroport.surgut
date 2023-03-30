@@ -3,6 +3,11 @@
   @media ($tablet3) {
     overflow: hidden;
   }
+  &.section {
+    @media ($tablet3) {
+      padding: 20px 0 40px;
+    }
+  }
 }
 .main_about__slider_box {
   margin-top: 60px;

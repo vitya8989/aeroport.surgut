@@ -1,0 +1,60 @@
+.sample_accordion {
+  padding: 25px 20px;
+  background: #FFFFFF;
+  border: 1px solid #E9EBED;
+  border-radius: 5px;
+
+  @media ($tablet3) {
+    padding: 15px;
+  }
+}
+.sample_accordion__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &.this--reverse {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+.sample_accordion__title {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 15px;
+    line-height: 135%;
+  }
+}
+.sample_accordion__arrow {
+  width: 27px;
+  height: 18px;
+  background: url('../img/icons/sample_accordion_arrow.svg') center / 100% 100% no-repeat;
+  transition: transform 0.25s;
+  margin-left: 15px;
+
+  .sample_accordion__head.active & {
+    transform: rotate(180deg);
+  }
+  .sample_accordion__head.this--reverse & {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+.sample_accordion__body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s;
+}
+.sample_accordion__body_content {
+  margin-top: 20px;
+  @media ($tablet3) {
+    margin-top: 15px;
+  }
+}

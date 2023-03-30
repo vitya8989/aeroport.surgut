@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Аэропорт Сургута</title>
-    <link rel="stylesheet" href="css/inputmask.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -18,20 +17,32 @@
     </header>
     <main class="main this--main">
         @@include('components/main/main_top/main_top.html')
+        <section class="run_string_section js_online_table_section">
+<!--            <div class="run_string__img_container">-->
+<!--                <div class="run_string__img">-->
+<!--                    Место добрых встреч и недолгих расставаний-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="run_string">
+                <marquee class="" direction="left" scrollamount="10">Сообщаем вам об изменениях в расписании полетов</marquee>
+            </div>
+        </section>
         @@include('components/main/main_online/main_online.html')
-        @@include('components/main/main_airport/main_airport.html')
+        <section class="main_airport this--main">
+            @@include('components/main/main_airport/main_airport.html')
+        </section>
         @@include('components/main/main_about/main_about.html')
         @@include('components/main/main_info/main_info.html')
-        @@include('components/main/main_branches/main_branches.html')
+        <section class="main_branches this--main">
+            @@include('components/main/main_branches/main_branches.html')
+        </section>
         @@include('components/main/main_news/main_news.html')
         @@include('components/main/main_partners/main_partners.html')
     </main>
     @@include('components/footer/footer.html')
 </div>
 
-<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
-<script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 

@@ -1,0 +1,52 @@
+.run_string__img_container {
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../img/main/main_online/top_img.png') 82% center / cover no-repeat, #416FEF;
+  padding: 0 30px;
+
+  @media ($desktopSmall) {
+    padding: 0 12px;
+  }
+  @media ($tablet3) {
+    min-height: 82px;
+    background: url('../img/main/main_online/top_img_mob.png') left / 146px 100% no-repeat, #416FEF;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.run_string__img {
+  font-family: 'Parsek', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 31px;
+  color: #FFFFFF;
+  text-align: center;
+
+  @media ($tablet3) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media ($mobileMiddle) {
+    max-width: 188px;
+  }
+}
+.run_string {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FFFFFF;
+  background: #416FEF;
+  height: 50px;
+  display: flex;
+  align-items: center;
+
+  @media ($tablet3) {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}

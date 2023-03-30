@@ -77,6 +77,13 @@ main {
 @import "./blocks/attention";
 @import "./blocks/title";
 @import "./blocks/pagination_bullets";
+@import "./blocks/page_top";
+@import "./blocks/breadcrumbs";
+@import "./blocks/run_string";
+@import "./blocks/download_link";
+@import "./blocks/sample_accordion";
+@import "./blocks/work_card";
+@import "./blocks/long_files";
 
 @import "../components/header/header";
 @import "../components/footer/footer";
@@ -89,4 +96,8 @@ main {
 @import "../components/main/main_branches/main_branches";
 @import "../components/main/main_news/main_news";
 @import "../components/main/main_partners/main_partners";
+
+@import "../components/dividing_sample/dividing_sample";
+
+@import "../components/text_sample/text_sample";
 

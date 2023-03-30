@@ -1,5 +1,16 @@
 .main_branches {
   background: #ffffff;
+  padding-bottom: 150px;
+  @media ($desktop) {
+    padding-bottom: 100px;
+  }
+  @media ($tablet3) {
+    padding-bottom: 60px;
+  }
+
+  &.this--main {
+    padding: 0;
+  }
 }
 .main_banches__links {
   margin-top: 60px;

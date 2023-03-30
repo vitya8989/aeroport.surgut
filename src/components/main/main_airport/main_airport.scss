@@ -1,5 +1,21 @@
 .main_airport {
   background: #ffffff;
+  padding: 20px 0 100px;
+  @media ($desktopSmall) {
+    padding: 20px 0 60px;
+  }
+  @media ($desktopSmall) {
+    padding: 20px 0 40px;
+  }
+  &.this--main {
+    padding: 100px 0;
+    @media ($desktopSmall) {
+      padding: 60px 0;
+    }
+    @media ($desktopSmall) {
+      padding: 40px 0;
+    }
+  }
 }
 .main_airport__row {
   margin-top: 60px;
