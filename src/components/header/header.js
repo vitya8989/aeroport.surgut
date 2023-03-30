@@ -62,6 +62,21 @@ if (mobMenu) {
             });
         });
     }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 1100) {
+            menuAccordionHeads.forEach((head) =>{
+                head.nextElementSibling.classList.remove('opened');
+                head.nextElementSibling.style.maxHeight = 0;
+                head.classList.remove('active');
+            });
+        } else {
+            menuAccordionHeads.forEach((head) =>{
+                head.nextElementSibling.style.maxHeight = 'none';
+                mobMenu.classList.remove('open-menu');
+                document.body.style.overflow = 'auto';
+            });
+        }
+    });
 }
 
 // Добавление/удаление класса для прозрачности хедера на главной

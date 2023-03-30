@@ -1,0 +1,120 @@
+.main_news {
+  padding: 80px 0 60px;
+
+  @media ($desktopSmall) {
+    padding: 60px 0 60px;
+  }
+  @media ($tablet3) {
+    padding: 40px 0 40px;
+  }
+}
+.main_news__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_news__link {
+  font-family: 'Verdana';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+  display: flex;
+  align-items: center;
+  transition: color 0.25s;
+
+  svg {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    path {
+      transition: fill 0.25s;
+    }
+  }
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      color: #DB1E35;
+      svg {
+        path {
+          fill: #DB1E35;
+        }
+      }
+    }
+  }
+
+  &.this--desktop {
+    @media ($tablet3) {
+      display: none;
+    }
+  }
+  &.this--mobile {
+    display: none;
+    @media ($tablet3) {
+      display: flex;
+      margin-top: 20px;
+    }
+  }
+}
+.main_news__items {
+  margin-top: 40px;
+  display: flex;
+  margin-left: -40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #E9EBED;
+
+  @media ($desktop) {
+    flex-wrap: wrap;
+  }
+  @media ($tablet3) {
+    margin-top: 20px;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-left: 0;
+    margin-bottom: -25px;
+  }
+}
+.main_news__item {
+  margin-left: 40px;
+  width: calc(25% - 40px);
+
+  @media ($desktop) {
+    margin-bottom: 40px;
+    width: calc(50% - 40px);
+  }
+  @media ($tablet3) {
+    margin-left: 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      .main_news__item_text {
+        color: #DB1E35;
+      }
+    }
+  }
+}
+.main_news__item_date {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #80A0B1;
+}
+.main_news__item_text {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+  margin-top: 10px;
+  transition: color 0.25s;
+
+  @media ($tablet3) {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 135%;
+  }
+}

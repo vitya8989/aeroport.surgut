@@ -62,6 +62,21 @@ if (mobMenu) {
             });
         });
     }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 1100) {
+            menuAccordionHeads.forEach((head) =>{
+                head.nextElementSibling.classList.remove('opened');
+                head.nextElementSibling.style.maxHeight = 0;
+                head.classList.remove('active');
+            });
+        } else {
+            menuAccordionHeads.forEach((head) =>{
+                head.nextElementSibling.style.maxHeight = 'none';
+                mobMenu.classList.remove('open-menu');
+                document.body.style.overflow = 'auto';
+            });
+        }
+    });
 }
 
 // Добавление/удаление класса для прозрачности хедера на главной
@@ -75,6 +90,43 @@ if (header && header.classList.contains('this--main')) {
        } else {
            header.classList.add('this--main');
        }
+    });
+};
+const bottomMenu = document.querySelector('.js_bottom_menu');
+
+if (bottomMenu) {
+    const bottomMenuAccordionHeads = bottomMenu.querySelectorAll('.js_footer_accordion_head');
+
+    if (bottomMenuAccordionHeads.length > 0) {
+        bottomMenuAccordionHeads.forEach((head) =>{
+            head.addEventListener('click', function (e) {
+                if (window.innerWidth < 1100) {
+                    e.preventDefault();
+                    if (this.nextElementSibling.classList.contains('opened')) {
+                        this.nextElementSibling.classList.remove('opened');
+                        this.nextElementSibling.style.maxHeight = 0;
+                        this.classList.remove('active');
+                    } else {
+                        this.nextElementSibling.classList.add('opened');
+                        this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 'px';
+                        this.classList.add('active');
+                    }
+                }
+            });
+        });
+    }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 1100) {
+            bottomMenuAccordionHeads.forEach((head) =>{
+                head.nextElementSibling.classList.remove('opened');
+                head.nextElementSibling.style.maxHeight = 0;
+                head.classList.remove('active');
+            });
+        } else {
+            bottomMenuAccordionHeads.forEach((head) =>{
+                head.nextElementSibling.style.maxHeight = 'none';
+            });
+        }
     });
 };
 // Прокрутка ко второму блоку по клику
@@ -301,6 +353,41 @@ if (mainAboutSlider) {
         }
     });
 };
+// Слайдер "Партнеры"
+
+const mainPartnersSlider = document.querySelector('.js_main_partners_slider');
+
+if (mainPartnersSlider) {
+    new Swiper('.js_main_partners_slider', {
+        speed: 300,
+        spaceBetween: 15,
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.main_partners__slider_pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.main_partners__slider_next',
+            prevEl: '.main_partners__slider_prev',
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 24,
+                slidesPerView: 5,
+            },
+            1100: {
+                spaceBetween: 32,
+                slidesPerView: 6,
+            },
+            1500: {
+                spaceBetween: 47,
+                slidesPerView: 7,
+            }
+        }
+    });
+}
+;
 
 
 
