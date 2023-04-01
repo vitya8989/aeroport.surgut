@@ -5,7 +5,7 @@
 @@include('../components/main/main_about/main_about.js');
 @@include('../components/main/main_partners/main_partners.js');
 @@include('../components/text_sample/text_sample.js');
-
+@@include('../components/schedule_in/schedule_in.js');
 
 
 

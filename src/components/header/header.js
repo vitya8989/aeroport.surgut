@@ -62,13 +62,16 @@ if (mobMenu) {
             });
         });
     }
+    let startWidth = window.innerWidth;
     window.addEventListener('resize', () => {
         if (window.innerWidth < 1100) {
-            menuAccordionHeads.forEach((head) =>{
-                head.nextElementSibling.classList.remove('opened');
-                head.nextElementSibling.style.maxHeight = 0;
-                head.classList.remove('active');
-            });
+            if (window.innerWidth !== startWidth) {
+                menuAccordionHeads.forEach((head) => {
+                    head.nextElementSibling.classList.remove('opened');
+                    head.nextElementSibling.style.maxHeight = 0;
+                    head.classList.remove('active');
+                });
+            }
         } else {
             menuAccordionHeads.forEach((head) =>{
                 head.nextElementSibling.style.maxHeight = 'none';

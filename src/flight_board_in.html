@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Аэропорт Сургута</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header this--blue">
+		@@include('components/header/header.html')
+	</header>
+	<main class="main this--blue">
+		<div class="page_top">
+			<div class="container">
+				<div class="page_top__content">
+					<div class="breadcrumbs">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+						<a href="#" class="breadcrumbs__link">Сургут</a>
+						<a href="#" class="breadcrumbs__link this--disabled">Табло рейсов Сургут</a>
+					</div>
+					<h1 class="page_top__title">Табло рейсов Сургут</h1>
+				</div>
+			</div>
+		</div>
+		@@include('components/flight_board_in/flight_board_in.html')
+	</main>
+	@@include('components/footer/footer.html')
+</div>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

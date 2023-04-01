@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-	max-width: 1780px;
+	max-width: 1760px;
 	margin: 0 auto;
 	padding: 0 20px;
 
@@ -54,6 +54,9 @@ main {
 
 	&.this--main {
 		padding-top: 0;
+	}
+	&.this--blue {
+		background: #EDF3FA;
 	}
 }
 
@@ -100,4 +103,8 @@ main {
 @import "../components/dividing_sample/dividing_sample";
 
 @import "../components/text_sample/text_sample";
+
+@import "../components/flight_board_out/flight_board";
+
+@import "../components/schedule_out/schedule";
 

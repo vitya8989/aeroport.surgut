@@ -2,18 +2,17 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Аэропорт Сургута</title>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>Аэропорт Сургута</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 <div class="wrapper">
-    <header class="header this--main">
-        <div class="container">
+	<header class="header this--blue">
+		<div class="container">
 	<div class="header__content">
 		<a href="/" class="header__logo">
 			<div class="header__logo_img this--left">
@@ -201,474 +200,423 @@
 	</form>
 </div>
 
-    </header>
-    <main class="main this--main">
-        <section class="main_top">
-	<div class="main_top__bg">
-		<img src="./img/main/main_top/main_top_bg.jpg" alt="">
-	</div>
-	<div class="container">
-		<div class="main_top__content">
-			<div class="main_top__title_wr">
-				<h1 class="main_top__title">Сургут</h1>
-				<div class="main_top__subtitle">Международный аэропорт им. Фармана Салманова</div>
+	</header>
+	<main class="main this--blue">
+		<div class="page_top">
+			<div class="container">
+				<div class="page_top__content">
+					<div class="breadcrumbs">
+						<a href="#" class="breadcrumbs__link">Главная</a>
+						<a href="#" class="breadcrumbs__link">Сургут</a>
+						<a href="#" class="breadcrumbs__link this--disabled">Табло рейсов Сургут</a>
+					</div>
+					<h1 class="page_top__title">Табло рейсов Сургут</h1>
+				</div>
 			</div>
-			<button class="main_top__btn js_scroll_btn">
-				<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M18.5599 4.70854C19.3939 4.29545 20.2905 5.14584 19.922 6.00055L13.4183 21.0862C13.071 21.8917 11.929 21.8917 11.5817 21.0862L5.07803 6.00055C4.70955 5.14584 5.60609 4.29545 6.44014 4.70854L12.5 7.70982L18.5599 4.70854Z" fill="white"/>
-				</svg>
-				Смотреть табло рейсов
-			</button>
 		</div>
-	</div>
-</section>
-        <section class="run_string_section js_online_table_section">
-<!--            <div class="run_string__img_container">-->
-<!--                <div class="run_string__img">-->
-<!--                    Место добрых встреч и недолгих расставаний-->
-<!--                </div>-->
-<!--            </div>-->
-            <div class="run_string">
-                <marquee class="" direction="left" scrollamount="10">Сообщаем вам об изменениях в расписании полетов</marquee>
-            </div>
-        </section>
-        <section class="main_online">
+		<section class="flight_board">
 	<div class="container">
-		<div class="main_online__content">
-			<div class="main_online__head_row">
-				<div class="main_online__head_left">
-					<h2 class="main_online__head_title">Онлайн-табло аэропорта Сургут</h2>
-					<div class="main_online__head_group">
-						<div class="main_online__head_tabs">
-							<a href="#" class="main_online__head_tab active js_tab_online" data-tab="departure">Вылет</a>
-							<a href="#" class="main_online__head_tab js_tab_online" data-tab="arrival">Прибытие</a>
-						</div>
-						<a href="#" class="main_online__head_link">Флайтрадар</a>
-					</div>
+		<div class="flight_board__content">
+			<div class="flight_board__top">
+				<div class="flight_board__top_left">
+					<a href="#" class="flight_board__link active">Вылет</a>
+					<a href="#" class="flight_board__link">Прибытие</a>
 				</div>
-				<div class="main_online__head_right">
-					<div class="main_online__head_info">
-						<div class="main_online__head_weather">
-							<span class="main_online__head_weather_value">-9°</span>
-							<span class="main_online__head_weather_icon this--cloud"></span>
-						</div>
-						<div class="main_online__head_time this--surgut js_time">00:00</div>
-						<div class="main_online__head_time_label">СУРГУТ</div>
-					</div>
-					<div class="main_online__head_info">
-						<div class="main_online__head_weather">
-							<span class="main_online__head_weather_value">-1°</span>
-							<span class="main_online__head_weather_icon this--cloud"></span>
-						</div>
-						<div class="main_online__head_time this--moscow js_time">00:00</div>
-						<div class="main_online__head_time_label">МОСКВА</div>
-					</div>
-					<div class="main_online__head_info">
-						<div class="main_online__head_weather">
-							<span class="main_online__head_weather_value">+4°</span>
-							<span class="main_online__head_weather_icon this--cloud"></span>
-						</div>
-						<div class="main_online__head_time this--london js_time">00:00</div>
-						<div class="main_online__head_time_label">ЛОНДОН</div>
-					</div>
+				<div class="flight_board__top_right">
+					<a href="#" class="flight_board__right_link">Вчера</a>
+					<a href="#" class="flight_board__right_link active">Cегодня</a>
+					<a href="#" class="flight_board__right_link">Завтра</a>
 				</div>
 			</div>
-			<div class="main_online__flights">
-				<div class="main_online__tab_body active js_tab_body_online js_flight_accordion_group" data-tab="departure">
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head active">
-							<div class="flight__time">11:40</div>
-							<div class="flight__city">Калининград</div>
-							<div class="flight__arrow"></div>
+			<div class="flight_board__flights js_flight_accordion_group">
+				<div class="flight_board__head">
+					<div class="flight_board__head_left">
+						<div class="flight_board__head_time">
+							Время
 						</div>
-						<div class="flight__right js_flight_accordion_body opened">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_1.png" alt="">
-								</div>
-							</div>
-							<div class="flight__desk">
-								<div class="flight__label">Стойка</div><div class="flight__value">Стойка 2</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Регистрация</div>
-							</div>
+						<div class="flight_board__head_city">
+							Направление
 						</div>
 					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">12:18</div>
-							<div class="flight__city">Баку</div>
-							<div class="flight__arrow"></div>
+					<div class="flight_board__head_right">
+						<div class="flight_board__head_num">
+							<div class="flight_board__head_value">Рейс</div>
 						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_2.png" alt="">
-								</div>
-							</div>
-							<div class="flight__desk">
-								<div class="flight__label">Стойка</div><div class="flight__value">Стойка 4</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
-							</div>
+						<div class="flight_board__head_logo">
+							<div class="flight_board__head_value">Лого</div>
 						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Москва (SVO)</div>
-							<div class="flight__arrow"></div>
+						<div class="flight_board__head_company">
+							<div class="flight_board__head_value">Авиакомпания</div>
 						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_3.png" alt="">
-								</div>
-							</div>
-							<div class="flight__desk">
-								<div class="flight__label">Стойка</div><div class="flight__value">Стойка 2</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">В пути <p>Ожидается в 12:05</p></div>
-							</div>
+						<div class="flight_board__head_desk">
+							<div class="flight_board__head_value">Стойка</div>
 						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Новосибирск(Толмачёво) <span>></span> Красноярск <span>></span> иркутск</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_4.png" alt="">
-								</div>
-							</div>
-							<div class="flight__desk">
-								<div class="flight__label">Стойка</div><div class="flight__value">Стойка 6</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Посадка</div>
-							</div>
-						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Алматы</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_2.png" alt="">
-								</div>
-							</div>
-							<div class="flight__desk">
-								<div class="flight__label">Стойка</div><div class="flight__value">Стойка 2</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Вылетел в 14:00</div>
-							</div>
-						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Калининград</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_1.png" alt="">
-								</div>
-							</div>
-							<div class="flight__desk">
-								<div class="flight__label">Стойка</div><div class="flight__value">Стойка 2</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Посадка</div>
-							</div>
-						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Калининград</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_4.png" alt="">
-								</div>
-							</div>
-							<div class="flight__desk">
-								<div class="flight__label">Стойка</div><div class="flight__value">Стойка 2</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Посадка</div>
-							</div>
+						<div class="flight_board__head_status">
+							<div class="flight_board__head_value">Статус</div>
 						</div>
 					</div>
 				</div>
-				<div class="main_online__tab_body js_tab_body_online js_flight_accordion_group" data-tab="arrival">
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head active">
-							<div class="flight__time">11:40</div>
-							<div class="flight__city">Калининград</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body opened">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_1.png" alt="">
-								</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Регистрация</div>
-							</div>
-							<div class="flight__fact_time">
-								<div class="flight__label">Время факт.</div><div class="flight__value">11:40</div>
-							</div>
-						</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head active">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
 					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">12:18</div>
-							<div class="flight__city">Баку</div>
-							<div class="flight__arrow"></div>
+					<div class="flight__right js_flight_accordion_body opened">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
 						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_2.png" alt="">
-								</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
-							</div>
-							<div class="flight__fact_time">
-								<div class="flight__label">Время факт.</div><div class="flight__value">11:40</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
 							</div>
 						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Москва (SVO)</div>
-							<div class="flight__arrow"></div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
 						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_3.png" alt="">
-								</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">В пути <p>Ожидается в 12:05</p></div>
-							</div>
-							<div class="flight__fact_time">
-								<div class="flight__label">Время факт.</div><div class="flight__value">11:40</div>
-							</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
 						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Новосибирск(Толмачёво) <span>></span> Красноярск <span>></span> иркутск</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_4.png" alt="">
-								</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Посадка</div>
-							</div>
-							<div class="flight__fact_time">
-								<div class="flight__label">Время факт.</div><div class="flight__value">11:40</div>
-							</div>
-						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Алматы</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_2.png" alt="">
-								</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Вылетел в 14:00</div>
-							</div>
-							<div class="flight__fact_time">
-								<div class="flight__label">Время факт.</div><div class="flight__value">11:40</div>
-							</div>
-						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Калининград</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_1.png" alt="">
-								</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Посадка</div>
-							</div>
-							<div class="flight__fact_time">
-								<div class="flight__label">Время факт.</div><div class="flight__value">11:40</div>
-							</div>
-						</div>
-					</div>
-					<div class="main_online__flight flight">
-						<div class="flight__left js_flight_accordion_head">
-							<div class="flight__time">13:45</div>
-							<div class="flight__city">Калининград</div>
-							<div class="flight__arrow"></div>
-						</div>
-						<div class="flight__right js_flight_accordion_body">
-							<div class="flight__num">
-								<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
-							</div>
-							<div class="flight__img_wr">
-								<div class="flight__label">Авиакомпания</div>
-								<div class="flight__value this--img">
-									<img src="./img/main/main_online/flight_4.png" alt="">
-								</div>
-							</div>
-							<div class="flight__status">
-								<div class="flight__label">Статус</div><div class="flight__value">Посадка</div>
-							</div>
-							<div class="flight__fact_time">
-								<div class="flight__label">Время факт.</div><div class="flight__value">11:40</div>
-							</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
 						</div>
 					</div>
 				</div>
-				<a href="#" class="main_online__flight_link">
-					Табло 24 часа
-					<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M4.20854 6.94015C3.79545 6.10609 4.64584 5.20955 5.50055 5.57803L20.5862 12.0817C21.3917 12.429 21.3917 13.571 20.5862 13.9183L5.50055 20.422C4.64584 20.7905 3.79545 19.8939 4.20854 19.0599L7.20982 13L4.20854 6.94015Z" fill="#DB1E35"/>
-					</svg>
-				</a>
-			</div>
-			<div class="main_online__attentions js_attentions">
-				<div class="main_online__attentions_body this--fixed js_attentions_body">
-					<div class="main_online__attention attention">
-						<div class="attention__top js_attention_accordion_head active">
-							<div class="attention__title">Внимание!</div>
-							<div class="attention__btn"><span class="attention__btn_text js_attention_btn_text">Развернуть</span> <span class="attention__btn_arrow"></span></div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Уфа</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
 						</div>
-						<div class="attention__bottom js_attention_accordion_body opened">
-							<div class="attention__img">
-								<img src="./img/main/main_online/attention_img.jpg" alt="">
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
 							</div>
-							<div class="attention__text">Полет рейса GT456 откладывается на 2 часа</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">В пути <p>Ожидается в 12:05</p></div>
 						</div>
 					</div>
-					<div class="main_online__attention attention">
-						<div class="attention__top js_attention_accordion_head">
-							<div class="attention__title">Внимание!</div>
-							<div class="attention__btn"><span class="attention__btn_text js_attention_btn_text">Развернуть</span> <span class="attention__btn_arrow"></span></div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
 						</div>
-						<div class="attention__bottom js_attention_accordion_body">
-							<div class="attention__img">
-								<img src="./img/main/main_online/attention_img.jpg" alt="">
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
 							</div>
-							<div class="attention__text">Полет рейса GT456 откладывается на 2 часа</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Посадка</div>
 						</div>
 					</div>
-					<div class="main_online__attention attention">
-						<div class="attention__top js_attention_accordion_head">
-							<div class="attention__title">Внимание!</div>
-							<div class="attention__btn"><span class="attention__btn_text js_attention_btn_text">Развернуть</span> <span class="attention__btn_arrow"></span></div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
 						</div>
-						<div class="attention__bottom js_attention_accordion_body">
-							<div class="attention__img">
-								<img src="./img/main/main_online/attention_img.jpg" alt="">
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_2.png" alt="">
 							</div>
-							<div class="attention__text">Полет рейса GT456 откладывается на 2 часа</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Россия</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Задержка</div>
 						</div>
 					</div>
-					<div class="main_online__attention attention">
-						<div class="attention__top js_attention_accordion_head">
-							<div class="attention__title">Внимание!</div>
-							<div class="attention__btn"><span class="attention__btn_text js_attention_btn_text">Развернуть</span> <span class="attention__btn_arrow"></span></div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
 						</div>
-						<div class="attention__bottom js_attention_accordion_body">
-							<div class="attention__img">
-								<img src="./img/main/main_online/attention_img.jpg" alt="">
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
 							</div>
-							<div class="attention__text">Полет рейса GT456 откладывается на 2 часа</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Вылетел<p>в 14:00</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Вылетел<p>в 14:00</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">В пути</div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">В пути</div>
+						</div>
+					</div>
+				</div>
+				<div class="flight_board__flight flight">
+					<div class="flight__left js_flight_accordion_head">
+						<div class="flight__time">11:40</div>
+						<div class="flight__city">Калининград</div>
+						<div class="flight__arrow"></div>
+					</div>
+					<div class="flight__right js_flight_accordion_body">
+						<div class="flight__num">
+							<div class="flight__label">Рейс</div><div class="flight__value">FG 0395</div>
+						</div>
+						<div class="flight__img_wr">
+							<div class="flight__label"></div>
+							<div class="flight__value this--img">
+								<img src="./img/main/main_online/flight_1.png" alt="">
+							</div>
+						</div>
+						<div class="flight__company">
+							<div class="flight__label">Авиакомпания</div>
+							<div class="flight__value">Победа</div>
+						</div>
+						<div class="flight__desk">
+							<div class="flight__label">Стойка</div><div class="flight__value">2</div>
+						</div>
+						<div class="flight__status">
+							<div class="flight__label">Статус</div><div class="flight__value">Задержка <p>до 00:00 07/12/24</p></div>
 						</div>
 					</div>
 				</div>
@@ -676,384 +624,8 @@
 		</div>
 	</div>
 </section>
-
-        <section class="main_airport this--main">
-            
-	<div class="container">
-		<div class="main_airport__content">
-			<h2 class="main_airport__title h2_title_line">Аэропорт Сургута</h2>
-			<div class="main_airport__row">
-				<div class="main_airport__left">
-					<div class="main_airport__left_row">
-						<a href="#" class="main_airport__link this--100">
-							<div class="main_airport__link_top">
-								<div class="main_airport__link_title">Схема аэропорта</div>
-								<div class="main_airport__link_text">Аптеки, рестораны, залы отдыха</div>
-							</div>
-							<div class="main_airport__link_btn">
-								Подробнее
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z" fill="#2761D1"/>
-								</svg>
-							</div>
-							<div class="main_airport__link_img">
-								<img src="./img/main/main_airport/img_1.png" alt="">
-							</div>
-						</a>
-						<a href="#" class="main_airport__link">
-							<div class="main_airport__link_title">Онлайн-регистрация<br> на рейс</div>
-							<div class="main_airport__link_btn">
-								Подробнее
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z" fill="#2761D1"/>
-								</svg>
-							</div>
-						</a>
-						<a href="#" class="main_airport__link">
-							<div class="main_airport__link_title">Электронный посадочный талон</div>
-							<div class="main_airport__link_btn">
-								Подробнее
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z" fill="#2761D1"/>
-								</svg>
-							</div>
-						</a>
-						<a href="#" class="main_airport__link">
-							<div class="main_airport__link_title">Расписание,<br> график полетов</div>
-							<div class="main_airport__link_btn">
-								Подробнее
-								<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z" fill="#2761D1"/>
-								</svg>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="main_airport__right">
-					<a href="#" class="main_airport__link this--100 this--hover_img">
-						<div class="main_airport__link_title">Табло рейсов</div>
-						<div class="main_airport__link_btn">
-							Подробнее
-							<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z" fill="#2761D1"/>
-							</svg>
-						</div>
-						<div class="main_airport__link_img">
-							<img src="./img/main/main_airport/img_2.png" alt="">
-						</div>
-						<div class="main_airport__link_bg_img">
-							<img src="./img/main/main_airport/img_bg.png" alt="">
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-        </section>
-        <section class="main_about section">
-	<div class="container">
-		<div class="main_about__content">
-			<h2 class="main_about__title h2_title_line">Об аэропорте</h2>
-			<div class="main_about__slider_box">
-				<div class="main_about__slider_prev">
-					<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M4.20854 6.94015C3.79545 6.10609 4.64584 5.20955 5.50055 5.57803L20.5862 12.0817C21.3917 12.429 21.3917 13.571 20.5862 13.9183L5.50055 20.422C4.64584 20.7905 3.79545 19.8939 4.20854 19.0599L7.20982 13L4.20854 6.94015Z" fill="#416FEF"/>
-					</svg>
-				</div>
-				<div class="main_about__slider_next">
-					<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M4.20854 6.94015C3.79545 6.10609 4.64584 5.20955 5.50055 5.57803L20.5862 12.0817C21.3917 12.429 21.3917 13.571 20.5862 13.9183L5.50055 20.422C4.64584 20.7905 3.79545 19.8939 4.20854 19.0599L7.20982 13L4.20854 6.94015Z" fill="#416FEF"/>
-					</svg>
-				</div>
-				<div class="main_about__slider_pagination pagination_bullets"></div>
-				<div class="main_about__slider swiper-container js_main_about_slider">
-					<div class="main_about__slider_wrapper swiper-wrapper">
-						<div class="main_about__slider_slide main_about_slide swiper-slide">
-							<a href="#" class="main_about_slide__body">
-								<div class="main_about_slide__num">01</div>
-								<div class="main_about_slide__content">
-									<ul>
-										<li>Перечень услуг в аэропорту</li>
-										<li>Перечень существенных условий заключаемых договоров</li>
-										<li>Порядок оказания услуг в условиях ограниченной технической возможности</li>
-										<li>Нормативы пропускной способности</li>
-										<li>Цены (тарифы, сборы) на услуги</li>
-										<li>Реестр заявок</li>
-										<li>Сведения о технической возможности</li>
-										<li>Сведения о структуре издержек на содержание объектов инфраструктуры</li>
-										<li>Решение об установлении приаэродромной территории аэродрома</li>
-									</ul>
-									<img src="./img/main/main_about/img_1.jpg" alt="">
-								</div>
-								<div class="main_about_slide__text">Авиакомпаниям</div>
-							</a>
-						</div>
-						<div class="main_about__slider_slide main_about_slide swiper-slide">
-							<a href="#" class="main_about_slide__body">
-								<div class="main_about_slide__num">02</div>
-								<div class="main_about_slide__content">
-									<ul>
-										<li>Коворкинг-центр</li>
-										<li>Бизнес-зал</li>
-										<li>Камера хранения</li>
-										<li>Ресторан</li>
-										<li>Душевые</li>
-										<li>Упаковка багажа</li>
-										<li>Комната матери и ребёнка</li>
-										<li>Залы повышенной комфортности</li>
-										<li>Оформление опоздавшего пассажира</li>
-										<li>Авиакассы</li>
-									</ul>
-									<img src="./img/main/main_about/img_2.jpg" alt="">
-								</div>
-								<div class="main_about_slide__text">Услуги</div>
-							</a>
-						</div>
-						<div class="main_about__slider_slide main_about_slide swiper-slide">
-							<a href="#" class="main_about_slide__body">
-								<div class="main_about_slide__num">03</div>
-								<div class="main_about_slide__content">
-									<ul>
-										<li>Коворкинг-центр</li>
-										<li>Бизнес-зал</li>
-										<li>Камера хранения</li>
-										<li>Ресторан</li>
-										<li>Душевые</li>
-										<li>Упаковка багажа</li>
-										<li>Комната матери и ребёнка</li>
-										<li>Залы повышенной комфортности</li>
-										<li>Оформление опоздавшего пассажира</li>
-										<li>Авиакассы</li>
-									</ul>
-									<img src="./img/main/main_about/img_3.jpg" alt="">
-								</div>
-								<div class="main_about_slide__text">Безопасность полётов</div>
-							</a>
-						</div>
-						<div class="main_about__slider_slide main_about_slide swiper-slide">
-							<a href="#" class="main_about_slide__body">
-								<div class="main_about_slide__num">04</div>
-								<div class="main_about_slide__content">
-									<ul>
-										<li>карта 2ГИС, международные автобусы, городские автобусы</li>
-									</ul>
-									<img src="./img/main/main_about/img_4.jpg" alt="">
-								</div>
-								<div class="main_about_slide__text">Как добраться</div>
-							</a>
-						</div>
-						<div class="main_about__slider_slide main_about_slide swiper-slide">
-							<a href="#" class="main_about_slide__body">
-								<div class="main_about_slide__num">05</div>
-								<div class="main_about_slide__content">
-									<ul>
-										<li>Коворкинг-центр</li>
-										<li>Бизнес-зал</li>
-										<li>Камера хранения</li>
-										<li>Ресторан</li>
-										<li>Душевые</li>
-										<li>Упаковка багажа</li>
-										<li>Комната матери и ребёнка</li>
-										<li>Залы повышенной комфортности</li>
-										<li>Оформление опоздавшего пассажира</li>
-										<li>Авиакассы</li>
-									</ul>
-									<img src="./img/main/main_about/img_5.jpg" alt="">
-								</div>
-								<div class="main_about_slide__text">Контакты</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-        <section class="main_info section">
-	<div class="container">
-		<div class="main_info__content">
-			<a href="#" class="main_info__link this--100">
-				<div class="main_info__link_title">Информация об аэропорте <span></span></div>
-				<div class="main_info__link_img">
-					<img src="./img/main/main_info/img_1.jpg" alt="">
-				</div>
-			</a>
-			<a href="#" class="main_info__link">
-				<div class="main_info__link_title">Гостиница «Полёт» <span></span></div>
-				<div class="main_info__link_img">
-					<img src="./img/main/main_info/img_2.jpg" alt="">
-				</div>
-			</a>
-			<a href="#" class="main_info__link">
-				<div class="main_info__link_title">Парковка <span></span></div>
-				<div class="main_info__link_img">
-					<img src="./img/main/main_info/img_3.jpg" alt="">
-				</div>
-			</a>
-		</div>
-	</div>
-</section>
-        <section class="main_branches this--main">
-            <div class="container">
-	<div class="main_branches__content">
-		<h2 class="main_branches__title h2_title_line">Филиалы</h2>
-		<div class="main_banches__links">
-			<div class="main_banches__links_left">
-				<a href="#" class="main_banches__link">
-					<span>Талакан</span>
-					<picture>
-						<source media="(max-width: 1200px)" srcset="./img/main/main_branches/img_1_mob.jpg">
-						<source media="(min-width: 1200.1px)" srcset="./img/main/main_branches/img_1.jpg">
-						<img src="./img/main/main_branches/img_1.jpg" alt="">
-					</picture>
-				</a>
-			</div>
-			<div class="main_banches__links_right">
-				<div class="main_banches__links_right_row">
-					<a href="#" class="main_banches__link this--100">
-						<span>Ноябрьск</span>
-						<picture>
-							<source media="(max-width: 1200px)" srcset="./img/main/main_branches/img_2_mob.jpg">
-							<source media="(min-width: 1200.1px)" srcset="./img/main/main_branches/img_2.jpg">
-							<img src="./img/main/main_branches/img_2.jpg" alt="">
-						</picture>
-					</a>
-					<a href="#" class="main_banches__link">
-						<span>Берёзово</span>
-						<picture>
-							<source media="(max-width: 1200px)" srcset="./img/main/main_branches/img_3_mob.jpg">
-							<source media="(min-width: 1200.1px)" srcset="./img/main/main_branches/img_3.jpg">
-							<img src="./img/main/main_branches/img_3.jpg" alt="">
-						</picture>
-					</a>
-					<a href="#" class="main_banches__link">
-						<span>Игрим</span>
-						<picture>
-							<source media="(max-width: 1200px)" srcset="./img/main/main_branches/img_4_mob.jpg">
-							<source media="(min-width: 1200.1px)" srcset="./img/main/main_branches/img_4.jpg">
-							<img src="./img/main/main_branches/img_4.jpg" alt="">
-						</picture>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-        </section>
-        <section class="main_news">
-	<div class="container">
-		<div class="main_news__content">
-			<h2 class="main_news__title h2_title_line">
-				Новости
-				<a href="#" class="main_news__link this--desktop">
-					Все новости
-					<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M4.20854 6.94015C3.79545 6.10609 4.64584 5.20955 5.50055 5.57803L20.5862 12.0817C21.3917 12.429 21.3917 13.571 20.5862 13.9183L5.50055 20.422C4.64584 20.7905 3.79545 19.8939 4.20854 19.0599L7.20982 13L4.20854 6.94015Z" fill="#2D3F57"/>
-					</svg>
-				</a>
-			</h2>
-			<div class="main_news__items">
-				<a href="#" class="main_news__item">
-					<div class="main_news__item_date">14 февраля 2023 г.</div>
-					<div class="main_news__item_text">Топ-5 лучших работников по версии пассажиров</div>
-				</a>
-				<a href="#" class="main_news__item">
-					<div class="main_news__item_date">14 февраля 2023 г.</div>
-					<div class="main_news__item_text">В Югре наградили лучших авиаторов</div>
-				</a>
-				<a href="#" class="main_news__item">
-					<div class="main_news__item_date">13 февраля 2023 г.</div>
-					<div class="main_news__item_text">Целевое обучение в высших учебных заведениях гражданской авиации на 2023 год</div>
-				</a>
-				<a href="#" class="main_news__item">
-					<div class="main_news__item_date">9 февраля 2023 г.</div>
-					<div class="main_news__item_text">100 лет отечественной гражданской авиации</div>
-				</a>
-			</div>
-			<a href="#" class="main_news__link this--mobile">
-				Все новости
-				<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M4.20854 6.94015C3.79545 6.10609 4.64584 5.20955 5.50055 5.57803L20.5862 12.0817C21.3917 12.429 21.3917 13.571 20.5862 13.9183L5.50055 20.422C4.64584 20.7905 3.79545 19.8939 4.20854 19.0599L7.20982 13L4.20854 6.94015Z" fill="#2D3F57"/>
-				</svg>
-			</a>
-		</div>
-	</div>
-</section>
-        <section class="main_partners">
-	<div class="container">
-		<div class="main_partners__content">
-			<div class="main_partners__slider_prev">
-				<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M4.20854 6.94015C3.79545 6.10609 4.64584 5.20955 5.50055 5.57803L20.5862 12.0817C21.3917 12.429 21.3917 13.571 20.5862 13.9183L5.50055 20.422C4.64584 20.7905 3.79545 19.8939 4.20854 19.0599L7.20982 13L4.20854 6.94015Z" fill="#416FEF"/>
-				</svg>
-			</div>
-			<div class="main_partners__slider_next">
-				<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M4.20854 6.94015C3.79545 6.10609 4.64584 5.20955 5.50055 5.57803L20.5862 12.0817C21.3917 12.429 21.3917 13.571 20.5862 13.9183L5.50055 20.422C4.64584 20.7905 3.79545 19.8939 4.20854 19.0599L7.20982 13L4.20854 6.94015Z" fill="#416FEF"/>
-				</svg>
-			</div>
-			<div class="main_partners__slider_pagination pagination_bullets"></div>
-			<div class="main_partners__slider swiper-container js_main_partners_slider">
-				<div class="main_partners__slider_wrapper swiper-wrapper">
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_1.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_2.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_3.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_4.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_5.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_6.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_7.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_1.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_2.jpg" alt="">
-						</div>
-					</div>
-					<div class="main_partners__slider_slide swiper-slide">
-						<div class="main_partners__slider_img">
-							<img src="./img/main/main_partners/img_3.jpg" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-    </main>
-    <footer class="footer">
+	</main>
+	<footer class="footer">
 	<div class="container">
 		<div class="footer__content">
 			<div class="footer__top">
@@ -1261,7 +833,6 @@
 </footer>
 </div>
 
-<script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 

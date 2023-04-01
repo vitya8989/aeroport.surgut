@@ -22,10 +22,10 @@
 
   @media (max-width: 1300px) {
     width: 100%;
-    cursor: pointer;
     align-items: flex-start;
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
+    cursor: pointer;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -38,11 +38,16 @@
   font-size: 20px;
   line-height: 28px;
   color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 15px;
+    line-height: 135%;
+  }
 }
 .flight__arrow {
   display: none;
 
-  @media ($desktopSmall) {
+  @media ($desktop) {
     display: block;
     width: 24px;
     height: 13px;
@@ -52,9 +57,12 @@
     background: url('../img/icons/gray_arrow_down.svg') center / 100% 100% no-repeat;
     transition: transform 0.25s;
 
-    .flight__left.active & {
+    .js_flight_accordion_head.active & {
       transform: rotate(180deg);
     }
+  }
+  @media ($tablet3) {
+    margin-top: 3px;
   }
 }
 .flight__time {
@@ -71,7 +79,7 @@
     margin-left: 15px;
     width: calc(100% - 15px);
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
     width: 100%;
     order: 3;
     margin-left: 0;
@@ -93,7 +101,7 @@
     margin-left: 0;
     margin-top: 20px;
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
     overflow: hidden;
     margin-top: 0;
     display: block;
@@ -103,14 +111,17 @@
 .flight__label {
   display: none;
 
-  @media ($desktopSmall) {
+  @media ($desktop) {
     display: block;
     margin-right: 15px;
     width: calc(47% - 15px);
+    font-size: 13px;
+    line-height: 20px;
+    color: rgba(66, 92, 127, 0.6);
   }
 }
 .flight__value {
-  @media ($desktopSmall) {
+  @media ($desktop) {
     width: 53%;
   }
 }
@@ -125,7 +136,7 @@
   @media (max-width: 1300px) {
     text-align: left;
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
     display: flex;
     align-items: center;
     width: auto;
@@ -139,9 +150,8 @@
   @media ($desktopSuperBig) {
     margin-left: 15px;
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
     display: flex;
-    align-items: center;
     width: auto;
     margin-left: 0;
     margin-top: 8px;
@@ -166,7 +176,7 @@
   @media ($desktopSuperBig) {
     margin-left: 15px;
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
     display: flex;
     align-items: center;
     width: auto;
@@ -183,9 +193,8 @@
     margin-left: 15px;
     width: calc(100% - 340px);
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
     display: flex;
-    align-items: center;
     width: auto;
     margin-left: 0;
     margin-top: 8px;
@@ -194,7 +203,7 @@
 
   .flight__value {
     text-align: center;
-    @media ($desktopSmall) {
+    @media ($desktop) {
       text-align: left;
     }
     p {
@@ -206,8 +215,12 @@
       color: #2D3F57;
       text-align: center;
       margin-top: 5px;
-      @media ($desktopSmall) {
+      @media ($desktop) {
         text-align: left;
+      }
+      @media ($tablet3) {
+        font-size: 13px;
+        line-height: 20px;
       }
     }
   }
@@ -221,7 +234,7 @@
   @media ($desktopSuperBig) {
     margin-left: 15px;
   }
-  @media ($desktopSmall) {
+  @media ($desktop) {
     display: flex;
     align-items: center;
     width: auto;

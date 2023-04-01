@@ -62,13 +62,16 @@ if (mobMenu) {
             });
         });
     }
+    let startWidth = window.innerWidth;
     window.addEventListener('resize', () => {
         if (window.innerWidth < 1100) {
-            menuAccordionHeads.forEach((head) =>{
-                head.nextElementSibling.classList.remove('opened');
-                head.nextElementSibling.style.maxHeight = 0;
-                head.classList.remove('active');
-            });
+            if (window.innerWidth !== startWidth) {
+                menuAccordionHeads.forEach((head) => {
+                    head.nextElementSibling.classList.remove('opened');
+                    head.nextElementSibling.style.maxHeight = 0;
+                    head.classList.remove('active');
+                });
+            }
         } else {
             menuAccordionHeads.forEach((head) =>{
                 head.nextElementSibling.style.maxHeight = 'none';
@@ -115,13 +118,16 @@ if (bottomMenu) {
             });
         });
     }
+    let startWidth = window.innerWidth;
     window.addEventListener('resize', () => {
         if (window.innerWidth < 1100) {
-            bottomMenuAccordionHeads.forEach((head) =>{
-                head.nextElementSibling.classList.remove('opened');
-                head.nextElementSibling.style.maxHeight = 0;
-                head.classList.remove('active');
-            });
+            if (window.innerWidth !== startWidth) {
+                bottomMenuAccordionHeads.forEach((head) => {
+                    head.nextElementSibling.classList.remove('opened');
+                    head.nextElementSibling.style.maxHeight = 0;
+                    head.classList.remove('active');
+                });
+            }
         } else {
             bottomMenuAccordionHeads.forEach((head) =>{
                 head.nextElementSibling.style.maxHeight = 'none';
@@ -196,6 +202,18 @@ if (tabOnline.length > 0 && tabBodyOnline.length > 0) {
                     tabBody.classList.remove('active');
                 }
             });
+            const flightAccordionHeads = document.querySelectorAll('.js_flight_accordion_head');
+            if (flightAccordionHeads.length > 0) {
+                flightAccordionHeads.forEach((head) => {
+                    if (window.innerWidth < 1200) {
+                        if (head.nextElementSibling.classList.contains('opened')) {
+                            head.nextElementSibling.style.maxHeight = head.nextElementSibling.scrollHeight + 'px';
+                        } else {
+                            head.nextElementSibling.style.maxHeight = 0;
+                        }
+                    }
+                });
+            }
         });
     });
 }
@@ -277,46 +295,59 @@ if (attentionsBody && attentions) {
 
 // Аккордеоны рейсов
 
-const flightAccordionHeads = document.querySelectorAll('.js_flight_accordion_head');
+const flightAccordionGroups = document.querySelectorAll('.js_flight_accordion_group');
 
-if (flightAccordionHeads.length > 0) {
-    flightAccordionHeads.forEach((head) =>{
-        if (window.innerWidth < 1100) {
-            head.nextElementSibling.style.maxHeight = 0;
-        }
-        head.addEventListener('click', function () {
-            if (window.innerWidth < 1100) {
-                flightAccordionHeads.forEach((head) => {
-                    if (head.nextElementSibling.classList.contains('opened') && head !== this) {
+if (flightAccordionGroups.length > 0) {
+    flightAccordionGroups.forEach((group) => {
+    const flightAccordionHeads = group.querySelectorAll('.js_flight_accordion_head');
+
+    if (flightAccordionHeads.length > 0) {
+        flightAccordionHeads.forEach((head) => {
+            if (window.innerWidth < 1200) {
+                if (head.nextElementSibling.classList.contains('opened')) {
+                    head.nextElementSibling.style.maxHeight = head.nextElementSibling.scrollHeight + 'px';
+                } else {
+                    head.nextElementSibling.style.maxHeight = 0;
+                }
+            }
+            head.addEventListener('click', function () {
+                if (window.innerWidth < 1200) {
+                    flightAccordionHeads.forEach((head) => {
+                        if (head.nextElementSibling.classList.contains('opened') && head !== this) {
+                            head.nextElementSibling.classList.remove('opened');
+                            head.nextElementSibling.style.maxHeight = 0;
+                            head.classList.remove('active');
+                        }
+                    });
+                    if (this.nextElementSibling.classList.contains('opened')) {
+                        this.nextElementSibling.classList.remove('opened');
+                        this.nextElementSibling.style.maxHeight = 0;
+                        this.classList.remove('active');
+                    } else {
+                        this.nextElementSibling.classList.add('opened');
+                        this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 'px';
+                        this.classList.add('active');
+                    }
+                }
+            });
+        });
+        let startWidth = window.innerWidth;
+        window.addEventListener('resize', () => {
+            if (window.innerWidth < 1200) {
+                if (window.innerWidth !== startWidth) {
+                    flightAccordionHeads.forEach((head) => {
                         head.nextElementSibling.classList.remove('opened');
                         head.nextElementSibling.style.maxHeight = 0;
                         head.classList.remove('active');
-                    }
-                });
-                if (this.nextElementSibling.classList.contains('opened')) {
-                    this.nextElementSibling.classList.remove('opened');
-                    this.nextElementSibling.style.maxHeight = 0;
-                    this.classList.remove('active');
-                } else {
-                    this.nextElementSibling.classList.add('opened');
-                    this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 'px';
-                    this.classList.add('active');
+                    });
                 }
+            } else {
+                flightAccordionHeads.forEach((head) => {
+                    head.nextElementSibling.style.maxHeight = 'none';
+                });
             }
         });
-    });
-    window.addEventListener('resize', () => {
-        if (window.innerWidth < 1100) {
-            flightAccordionHeads.forEach((head) =>{
-                head.nextElementSibling.classList.remove('opened');
-                head.nextElementSibling.style.maxHeight = 0;
-                head.classList.remove('active');
-            });
-        } else {
-            flightAccordionHeads.forEach((head) =>{
-                head.nextElementSibling.style.maxHeight = 'none';
-            });
-        }
+    }
     });
 };
 // Слайдер "Об аэропорте"
@@ -456,7 +487,7 @@ if (sampleAccordionHeads.length > 0) {
         });
     });
 };
-
+$('#direction-select').SumoSelect();;
 
 
 

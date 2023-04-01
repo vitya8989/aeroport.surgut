@@ -21,13 +21,16 @@ if (bottomMenu) {
             });
         });
     }
+    let startWidth = window.innerWidth;
     window.addEventListener('resize', () => {
         if (window.innerWidth < 1100) {
-            bottomMenuAccordionHeads.forEach((head) =>{
-                head.nextElementSibling.classList.remove('opened');
-                head.nextElementSibling.style.maxHeight = 0;
-                head.classList.remove('active');
-            });
+            if (window.innerWidth !== startWidth) {
+                bottomMenuAccordionHeads.forEach((head) => {
+                    head.nextElementSibling.classList.remove('opened');
+                    head.nextElementSibling.style.maxHeight = 0;
+                    head.classList.remove('active');
+                });
+            }
         } else {
             bottomMenuAccordionHeads.forEach((head) =>{
                 head.nextElementSibling.style.maxHeight = 'none';
