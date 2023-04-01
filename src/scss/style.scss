@@ -74,6 +74,17 @@ main {
 	&.this--bottom {
 		padding-top: 0;
 	}
+	&.this--alone {
+		padding-top: 0;
+		padding-bottom: 150px;
+		@media ($desktop) {
+			padding-bottom: 100px;
+		}
+		@media ($tablet3) {
+			padding-top: 20px;
+			padding-bottom: 60px;
+		}
+	}
 }
 
 @import "./blocks/flight";
@@ -108,3 +119,6 @@ main {
 
 @import "../components/schedule_out/schedule";
 
+@import "../components/scheme/scheme";
+
+@import "../components/online_registration/online_registration";

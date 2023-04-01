@@ -487,7 +487,26 @@ if (sampleAccordionHeads.length > 0) {
         });
     });
 };
-$('#direction-select').SumoSelect();;
+// Инициалтзация селекта в расписании полетов (внутренние направления)
+
+const directionSelect = document.getElementById('direction-select');
+
+if (directionSelect) {
+    $('#direction-select').SumoSelect();
+};
+// Подключение карты 2gis
+
+const scheme = document.getElementById('scheme');
+
+if (scheme) {
+    DG.then(function() {
+        DG.map('scheme', {
+            center: [61.340228, 73.407892],
+            zoom: 17
+        });
+    });
+}
+;
 
 
 

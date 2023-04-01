@@ -1,0 +1,159 @@
+.online_registration.text_sample {
+  section {
+    @media ($tablet3) {
+      margin-bottom: 20px;
+    }
+  }
+  ul {
+    margin: 13px 0;
+    max-width: none;
+  }
+}
+.online_registration__companies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -45px;
+  margin-bottom: -30px;
+
+  @media ($desktop) {
+    margin-left: -20px;
+    margin-bottom: -20px;
+  }
+  @media ($tablet3) {
+    margin-left: -16px;
+    margin-bottom: -5px;
+  }
+}
+.online_registration__company {
+  width: calc(20% - 45px);
+  margin-left: 45px;
+  margin-bottom: 30px;
+  padding: 10px 14px 0;
+
+  @media ($desktop) {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: calc(20% - 20px);
+  }
+  @media ($desktopSmall) {
+    padding: 10px;
+  }
+  @media ($tablet2) {
+    width: calc(25% - 20px);
+  }
+  @media ($tablet3) {
+    width: calc(33.333% - 16px);
+    margin-left: 16px;
+    margin-bottom: 5px;
+  }
+  @media ($mobileMiddle) {
+    width: calc(50% - 16px);
+  }
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      .online_registration__company_name {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+.online_registration__company_img {
+  position: relative;
+  padding-top: 29%;
+
+  @media ($desktopSmall) {
+    padding-top: 42.37%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.online_registration__company_name {
+  display: flex;
+  justify-content: center;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #416FEF;
+  margin-top: 13px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s, visibility 0.25s;
+
+  @media ($desktopSmall) {
+    display: none;
+  }
+
+  span {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+    background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z' fill='%23416FEF'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+  }
+}
+
+.online_registration__scheme {
+  position: relative;
+  padding-top: 28.5%;
+  border: 1px solid #E5F7F9;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media ($tablet3) {
+    padding-top: 64.52%;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.online_registration__btn {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 310px;
+  background: #DB1E35;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+  transition: background 0.25s;
+
+  @media ($tablet3) {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 135%;
+  }
+
+  @media ($mobileMiddle) {
+    max-width: none;
+    width: 100%;
+  }
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      background: #416FEF;
+    }
+  }
+  &:active {
+    background: #264D83!important;
+  }
+}

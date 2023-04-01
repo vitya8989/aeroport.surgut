@@ -1,13 +1,3 @@
-.flight_board {
-  padding-bottom: 150px;
-  @media ($desktop) {
-    padding-bottom: 100px;
-  }
-  @media ($tablet3) {
-    padding-top: 20px;
-    padding-bottom: 60px;
-  }
-}
 .flight_board__top {
   display: flex;
   align-items: baseline;

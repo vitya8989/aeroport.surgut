@@ -1,0 +1,10 @@
+.scheme_block {
+  height: 600px;
+  border: 1px solid #E5F7F9;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @media ($tablet3) {
+    height: 477px;
+  }
+}

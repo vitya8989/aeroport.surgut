@@ -6,6 +6,7 @@
 @@include('../components/main/main_partners/main_partners.js');
 @@include('../components/text_sample/text_sample.js');
 @@include('../components/schedule_in/schedule_in.js');
+@@include('../components/scheme/scheme.js');
 
 
 

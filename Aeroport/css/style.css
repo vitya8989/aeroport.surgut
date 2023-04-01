@@ -170,6 +170,11 @@ main.this--blue {
   padding-top: 0;
 }
 
+.section.this--alone {
+  padding-top: 0;
+  padding-bottom: 150px;
+}
+
 .flight {
   background: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
@@ -429,6 +434,10 @@ main.this--blue {
   font-size: 80px;
   line-height: 120%;
   color: #264D83;
+}
+
+.page_top__title.this--center {
+  text-align: center;
 }
 
 .breadcrumbs {
@@ -2979,10 +2988,6 @@ main.this--blue {
   margin-bottom: 15px;
 }
 
-.flight_board {
-  padding-bottom: 150px;
-}
-
 .flight_board__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3165,10 +3170,6 @@ main.this--blue {
 
 .flight_board__flight {
   margin-bottom: 10px;
-}
-
-.schedule {
-  padding-bottom: 150px;
 }
 
 .schedule__flights {
@@ -3529,6 +3530,121 @@ main.this--blue {
   color: #2D3F57;
 }
 
+.scheme_block {
+  height: 600px;
+  border: 1px solid #E5F7F9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.online_registration.text_sample ul {
+  margin: 13px 0;
+  max-width: none;
+}
+
+.online_registration__companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -45px;
+  margin-bottom: -30px;
+}
+
+.online_registration__company {
+  width: calc(20% - 45px);
+  margin-left: 45px;
+  margin-bottom: 30px;
+  padding: 10px 14px 0;
+}
+
+.online_registration__company_img {
+  position: relative;
+  padding-top: 29%;
+}
+
+.online_registration__company_img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.online_registration__company_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #416FEF;
+  margin-top: 13px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.25s, visibility 0.25s;
+  -o-transition: opacity 0.25s, visibility 0.25s;
+  transition: opacity 0.25s, visibility 0.25s;
+}
+
+.online_registration__company_name span {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-left: 10px;
+  background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z' fill='%23416FEF'/%3E%3C/svg%3E") center/100% 100% no-repeat;
+}
+
+.online_registration__scheme {
+  position: relative;
+  padding-top: 28.5%;
+  border: 1px solid #E5F7F9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.online_registration__scheme img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.online_registration__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 310px;
+  background: #DB1E35;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+  -webkit-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.online_registration__btn:active {
+  background: #264D83 !important;
+}
+
 @media (min-width: 768.1px) {
   .schedule__direction .SumoSelect > .optWrapper > .options::-webkit-scrollbar {
     width: 5px;
@@ -3754,6 +3870,15 @@ main.this--blue {
 
   .text_sample__video_btn:hover {
     background: #ffffff;
+  }
+
+  .online_registration__company:hover .online_registration__company_name {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .online_registration__btn:hover {
+    background: #416FEF;
   }
 }
 
@@ -4249,6 +4374,10 @@ main.this--blue {
 }
 
 @media (max-width: 1200px) {
+  .section.this--alone {
+    padding-bottom: 100px;
+  }
+
   .flight__left {
     cursor: pointer;
     -ms-flex-wrap: wrap;
@@ -4440,10 +4569,6 @@ main.this--blue {
     padding: 10px 0 100px;
   }
 
-  .flight_board {
-    padding-bottom: 100px;
-  }
-
   .flight_board__head {
     display: none;
   }
@@ -4459,10 +4584,6 @@ main.this--blue {
     margin-left: 0;
     margin-top: 8px;
     text-align: left;
-  }
-
-  .schedule {
-    padding-bottom: 100px;
   }
 
   .schedule__head {
@@ -4595,6 +4716,17 @@ main.this--blue {
     color: rgba(66, 92, 127, 0.6);
     width: calc(50% - 15px);
     margin-right: 15px;
+  }
+
+  .online_registration__companies {
+    margin-left: -20px;
+    margin-bottom: -20px;
+  }
+
+  .online_registration__company {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: calc(20% - 20px);
   }
 }
 
@@ -5132,6 +5264,18 @@ main.this--blue {
     margin-left: 10px;
     width: calc(50% - 10px);
   }
+
+  .online_registration__company {
+    padding: 10px;
+  }
+
+  .online_registration__company_img {
+    padding-top: 42.37%;
+  }
+
+  .online_registration__company_name {
+    display: none;
+  }
 }
 
 @media (max-width: 1100px) and (max-width: 768px) {
@@ -5198,11 +5342,20 @@ main.this--blue {
   .main_online__attentions_body {
     width: 280px;
   }
+
+  .online_registration__company {
+    width: calc(25% - 20px);
+  }
 }
 
 @media (max-width: 768px) {
   main {
     padding-top: 69px;
+  }
+
+  .section.this--alone {
+    padding-top: 20px;
+    padding-bottom: 60px;
   }
 
   .flight {
@@ -5256,6 +5409,10 @@ main.this--blue {
     margin-top: 20px;
     font-size: 24px;
     line-height: 135%;
+  }
+
+  .page_top__title.this--center {
+    text-align: left;
   }
 
   .breadcrumbs {
@@ -6178,11 +6335,6 @@ main.this--blue {
     margin-bottom: 10px;
   }
 
-  .flight_board {
-    padding-top: 20px;
-    padding-bottom: 60px;
-  }
-
   .flight_board__top {
     display: block;
     padding-bottom: 0;
@@ -6191,11 +6343,6 @@ main.this--blue {
 
   .flight_board__flight.flight {
     padding: 10px 15px;
-  }
-
-  .schedule {
-    padding-top: 20px;
-    padding-bottom: 60px;
   }
 
   .schedule__flights {
@@ -6235,6 +6382,36 @@ main.this--blue {
     font-size: 13px;
     line-height: 20px;
   }
+
+  .scheme_block {
+    height: 477px;
+  }
+
+  .online_registration.text_sample section {
+    margin-bottom: 20px;
+  }
+
+  .online_registration__companies {
+    margin-left: -16px;
+    margin-bottom: -5px;
+  }
+
+  .online_registration__company {
+    width: calc(33.333% - 16px);
+    margin-left: 16px;
+    margin-bottom: 5px;
+  }
+
+  .online_registration__scheme {
+    padding-top: 64.52%;
+  }
+
+  .online_registration__btn {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 135%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -6251,6 +6428,15 @@ main.this--blue {
   }
 
   .schedule__direction {
+    width: 100%;
+  }
+
+  .online_registration__company {
+    width: calc(50% - 16px);
+  }
+
+  .online_registration__btn {
+    max-width: none;
     width: 100%;
   }
 }
