@@ -1,0 +1,108 @@
+.news_detail {
+  .container {
+    max-width: 1220px;
+  }
+}
+.news_detail__top {
+  padding: 40px 0;
+
+  @media ($tablet3) {
+    padding: 0 0 20px;
+  }
+}
+.news_detail__back {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #416FEF;
+  transition: color 0.25s;
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      color: #DB1E35
+    }
+  }
+
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.news_detail__title {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #264D83;
+
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 135%;
+  }
+}
+.news_detail__date {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: rgba(66, 92, 127, 0.6);
+
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}
+
+.news_detail__info {
+  margin-top: 30px;
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+
+  section {
+    margin-bottom: 30px;
+  }
+  strong {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    color: #2D3F57;
+
+    @media ($tablet3) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    color: #2D3F57;
+    margin-bottom: 15px;
+
+    @media ($tablet3) {
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.news_detail__copyright {
+  font-family: 'Verdana-italic', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

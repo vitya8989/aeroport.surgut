@@ -1,0 +1,198 @@
+.vacancy_detail {
+  .container {
+    max-width: 1220px;
+  }
+}
+.vacancy_detail__top {
+  padding: 40px 0;
+
+  @media ($tablet3) {
+    padding: 0 0 20px;
+  }
+}
+.vacancy_detail__back {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #416FEF;
+  transition: color 0.25s;
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      color: #DB1E35
+    }
+  }
+
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.vacancy_detail__title {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #264D83;
+
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 135%;
+  }
+}
+.vacancy_detail__subtitle {
+  margin-top: 20px;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #DB1E35;
+
+  @media ($tablet3) {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 135%;
+  }
+}
+.vacancy_detail__info {
+  margin-top: 40px;
+
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+
+  h3 {
+    margin-top: 30px;
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #2D3F57;
+
+    @media ($tablet3) {
+      margin-top: 20px;
+      font-size: 15px;
+      line-height: 135%;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  ul {
+    margin-top: 15px;
+    padding-left: 25px;
+
+    @media ($tablet3) {
+      padding-left: 20px;
+    }
+
+    li {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      text-align: justify;
+      color: #2D3F57;
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @media ($tablet3) {
+        font-size: 13px;
+        line-height: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.vacancy_detail__bottom {
+  margin-top: 40px;
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+}
+.vacancy_detail__links {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  a {
+    color: #2D3F57;
+    transition: color 0.25s;
+
+    &:hover {
+      @media ($desktopSmallMax) {
+        color: #DB1E35
+      }
+    }
+  }
+}
+.vacancy_detail__contacts {
+  display: flex;
+  align-items: center;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+  margin-top: 10px;
+
+  @media ($tablet3) {
+    font-size: 15px;
+    line-height: 135%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  a {
+    color: #2D3F57;
+    margin-left: 10px;
+    transition: color 0.25s;
+
+    &:hover {
+      @media ($desktopSmallMax) {
+        color: #DB1E35
+      }
+    }
+    @media ($tablet3) {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+.vacancy_detail__btn {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 20px;
+  max-width: 294px;
+  background: #DB1E35;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #FFFFFF;
+  transition: background 0.25s;
+
+  @media ($mobileMiddle) {
+    max-width: none;
+    width: 100%;
+  }
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      background: #416FEF;
+    }
+  }
+  &:active {
+    background: #264D83!important;
+  }
+}

@@ -1,0 +1,176 @@
+.vacancies__top {
+  max-width: 1180px;
+}
+.vacancies__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: justify;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+.vacancies__download_link {
+  max-width: 580px;
+  margin-top: 25px;
+
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+}
+.vacancies__items {
+  margin-top: 30px;
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+  &.this--mt60 {
+    margin-top: 60px;
+    @media ($desktopSmall) {
+      margin-top: 40px;
+    }
+  }
+}
+.vacancies__item {
+  background: #FFFFFF;
+  border: 1px solid #E9EBED;
+  border-radius: 10px;
+  display: flex;
+  padding: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+  transition: box-shadow 0.25s;
+
+  @media ($desktopSmall) {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  @media ($tablet3) {
+    padding: 15px;
+  }
+
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      box-shadow: 0 0 20px rgba(37, 59, 71, 0.05);
+      .vacancies__item_btn {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.vacancies__item_title {
+  margin-right: 100px;
+  flex: 1 1 auto;
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+
+  @media ($desktopSmall) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-right: 0;
+  }
+
+  @media ($tablet3) {
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.vacancies__item_group {
+  width: 320px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media ($desktopSmall) {
+    width: 100%;
+    margin-top: 15px;
+  }
+  @media ($tablet3) {
+    margin-top: 10px;
+  }
+}
+.vacancies__item_salary {
+  width: 130px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: right;
+  color: #2D3F57;
+  @media ($desktopSmall) {
+    width: auto;
+    text-align: left;
+  }
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.vacancies__item_btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s, visibility 0.25s;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #DB1E35;
+  padding-right: 35px;
+  background: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.20854 6.44015C3.79545 5.60609 4.64584 4.70955 5.50055 5.07803L20.5862 11.5817C21.3917 11.929 21.3917 13.071 20.5862 13.4183L5.50055 19.922C4.64584 20.2905 3.79545 19.3939 4.20854 18.5599L7.20982 12.5L4.20854 6.44015Z' fill='%23DB1E35'/%3E%3C/svg%3E ") right center / 25px 25px no-repeat;
+
+  @media ($desktopSmall) {
+    opacity: 1;
+    visibility: visible;
+  }
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+.vacancies__title_h2 {
+  margin-top: 50px;
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: #264D83;
+  @media ($desktopSmall) {
+    font-size: 40px;
+  }
+  @media ($tablet3) {
+    font-size: 22px;
+    line-height: 135%;
+    margin-top: 40px;
+  }
+}
+.vacancies__title_h3 {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #264D83;
+  margin-top: 60px;
+
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 135%;
+    margin-top: 25px;
+  }
+}

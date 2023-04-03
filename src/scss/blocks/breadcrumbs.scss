@@ -23,6 +23,13 @@
   color: #2D3F57;
   position: relative;
   flex: 0 0 auto;
+  transition: color 0.25s;
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      color: #DB1E35
+    }
+  }
 
   @media ($tablet3) {
     font-size: 13px;

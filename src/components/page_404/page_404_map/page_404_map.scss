@@ -1,0 +1,20 @@
+.page_404_map {
+  padding: 60px 0 150px;
+
+  @media ($desktop) {
+    padding: 60px 0 100px;
+  }
+  @media ($desktopSmall) {
+    display: none;
+  }
+}
+.page_404_map__title {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: #264D83;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #BEC4C8;
+}

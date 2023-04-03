@@ -1,0 +1,188 @@
+.ask__content {
+  max-width: 960px;
+}
+.ask__subtitle {
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 15px;
+    line-height: 135%;
+  }
+}
+.ask__btns {
+  margin-top: 40px;
+  display: flex;
+  margin-left: -15px;
+
+  @media ($tablet3) {
+    margin-top: 20px;
+    margin-left: 0;
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+  }
+}
+.ask__btn {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+  padding: 15px 30px;
+  background: #FFFFFF;
+  border: 1px solid rgba(66, 92, 127, 0.6);
+  border-radius: 5px;
+  transition: background 0.25s, color 0.25s;
+
+  @media ($tablet3) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    @media ($desktopSmallMax) {
+      background: #416FEF;
+      color: #FFFFFF;
+    }
+  }
+
+  &:active {
+    background: #264D83!important;
+    color: #FFFFFF;
+  }
+
+  &.this--red {
+    background: #DB1E35;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+}
+.ask__questions {
+  margin-top: 40px;
+
+  @media ($tablet3) {
+    margin-top: 30px;
+  }
+}
+.ask__question {
+  margin-bottom: 15px;
+  @media ($tablet3) {
+    margin-bottom: 10px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.question {
+  background: #FFFFFF;
+  border: 1px solid #E9EBED;
+  border-radius: 10px;
+  padding: 25px 30px;
+}
+.question__top {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.question__text {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 5px;
+  }
+}
+.question__btn {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #416FEF;
+  cursor: pointer;
+
+  @media ($tablet3) {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+.question__answer {
+  max-height: 0;
+  overflow: hidden;
+}
+.question__answer_top {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+  padding-left: 30px;
+  background: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.00001 1.8998C1.00001 1.57824 1.17151 1.28119 1.44987 1.12051C1.72823 0.959829 2.07125 0.959829 2.3496 1.12051C2.62795 1.28119 2.79947 1.57825 2.79947 1.8998C2.79947 4.52492 3.84218 7.04258 5.69829 8.89876C7.55441 10.755 10.0716 11.7978 12.6967 11.7978H15.9266L12.0578 7.93771C11.8875 7.76879 11.7917 7.53882 11.7917 7.2988C11.7917 7.05877 11.8875 6.82881 12.0578 6.65988C12.2267 6.48956 12.4566 6.39375 12.6967 6.39375C12.9367 6.39375 13.1666 6.48956 13.3355 6.65988L18.7339 12.0587C18.9042 12.2276 19 12.4576 19 12.6976C19 12.9377 18.9042 13.1676 18.7339 13.3366L13.3355 18.7354C13.1072 18.9636 12.7746 19.0527 12.4629 18.9692C12.151 18.8856 11.9076 18.6422 11.824 18.3303C11.7405 18.0186 11.8296 17.686 12.0578 17.4576L15.9266 13.5974H12.6966C9.59458 13.5974 6.61961 12.365 4.42581 10.1713C2.23232 7.97766 1.00001 5.00233 1.00001 1.8998Z' fill='%232D3F57'/%3E%3C/svg%3E%0A") left center / 20px 20px no-repeat;
+
+  @media ($tablet3) {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.question__answer_text {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.ask__search {
+  z-index: 101;
+}
+
+.ask__top_input {
+  margin-left: 15px;
+  flex: 1 1 auto;
+  background: #FFFFFF;
+  border: 1px solid #D6D9DC;
+  border-radius: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

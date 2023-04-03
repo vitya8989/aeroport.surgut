@@ -7,7 +7,18 @@
 @@include('../components/text_sample/text_sample.js');
 @@include('../components/schedule_in/schedule_in.js');
 @@include('../components/scheme/scheme.js');
+@@include('../components/ask/ask/ask.js');
 
+// Только цифры для инпутов
 
+const onlyNumber = document.querySelectorAll('.js_only_number');
+
+if (onlyNumber.length > 0) {
+    for (let i = 0; i < onlyNumber.length; i++) {
+        onlyNumber[i].addEventListener('input', function () {
+            this.value = this.value.replace(/[^\d.,]/g, "");
+        });
+    }
+}
 
 

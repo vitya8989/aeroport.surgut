@@ -119,16 +119,11 @@ if (attentionsBody && attentions) {
     window.addEventListener('scroll', () => {
         if (window.pageYOffset + attentionsBodyTop > attentionsTop + startPageYOffset) {
             attentionsBody.classList.remove('this--fixed');
-        } else {
-            attentionsBody.classList.add('this--fixed');
         }
     });
 
     window.addEventListener('resize', () => {
         attentionsBody.style.left = `${attentions.getBoundingClientRect().left}px`;
-        if (!attentionsBody.classList.contains('this--fixed')) {
-            attentionsBody.classList.add('this--fixed');
-        };
         attentionsBodyTop = attentionsBody.getBoundingClientRect().top;
         attentionsTop = attentions.getBoundingClientRect().top;
         startPageYOffset = window.pageYOffset;
