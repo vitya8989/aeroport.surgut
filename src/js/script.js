@@ -8,6 +8,7 @@
 @@include('../components/schedule_in/schedule_in.js');
 @@include('../components/scheme/scheme.js');
 @@include('../components/ask/ask/ask.js');
+@@include('../components/ask/ask_popup/ask_popup.js');
 
 // Только цифры для инпутов
 

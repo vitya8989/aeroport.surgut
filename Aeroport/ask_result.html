@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>Аэропорт Сургута</title>
+	<link rel="stylesheet" href="css/inputmask.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/sumoSelect.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -306,6 +309,59 @@
 		</div>
 	</form>
 </div>
+		<div class="ask_popup js_ask_popup">
+	<div class="ask_popup__body">
+		<div class="ask_popup__close js_ask_popup_close"></div>
+		<div class="ask_popup__img">
+			<img src="./img/ask/ask_popup.jpg" alt="">
+		</div>
+		<div class="ask_popup__content js_ask_content" data-content="form">
+			<h2 class="ask_popup__title">Задать вопрос</h2>
+			<form action="#" name="ask_popup_form" class="ask_popup__form js_ask_popup_form">
+				<div class="ask_popup__inputs">
+					<div class="ask_popup__input_wr">
+						<span class="ask_popup__input_placeholder">Имя*</span>
+						<input type="text" class="ask_popup__input js_ask_popup_input js_ask_popup_input_required" name="name">
+						<span class="ask_popup__error_message"></span>
+					</div>
+					<div class="ask_popup__input_wr">
+						<span class="ask_popup__input_placeholder">Телефон*</span>
+						<input type="tel" class="ask_popup__input js_ask_popup_input js_ask_popup_input_required js_tel_mask" name="phone">
+						<span class="ask_popup__error_message"></span>
+					</div>
+					<div class="ask_popup__input_wr">
+						<span class="ask_popup__input_placeholder">Почта*</span>
+						<input type="email" class="ask_popup__input js_ask_popup_input js_ask_popup_input_required" name="mail">
+						<span class="ask_popup__error_message"></span>
+					</div>
+					<div class="ask_popup__input_wr">
+						<span class="ask_popup__input_placeholder">Ваш вопрос</span>
+						<textarea name="question" class="ask_popup__textarea js_ask_popup_input"></textarea>
+					</div>
+				</div>
+				<div class="ask_popup__form_captcha"></div>
+				<div class="ask_popup__form_bottom">
+					<input type="submit" value="Отправить" class="ask_popup__form_submit">
+					<div class="ask_popup__agree">
+						Нажимая на кнопку “Отправить”, вы соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="ask_popup__content this--flex js_ask_content active" data-content="thanks">
+			<div class="thanks">
+				<h2 class="ask_popup__title">
+					Спасибо<br> за Ваш вопрос!
+				</h2>
+				<div class="thanks__text">Ответы на задаваемые вопросы обрабатываются в трёхдневный срок и публикуются в рабочие дни</div>
+				<div class="thanks__btns">
+					<button class="thanks__btn this--transparent js_ask_popup_close">Закрыть</button>
+					<button class="thanks__btn this--red js_ask_popup_new_question">Задать еще вопрос</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 	</main>
 	<footer class="footer">
 	<div class="container">
@@ -515,6 +571,10 @@
 </footer>
 </div>
 
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/sumoSelect.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 

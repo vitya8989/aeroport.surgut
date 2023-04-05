@@ -31,6 +31,8 @@
   margin-bottom: 30px;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   @media ($desktopSmall) {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -85,60 +87,70 @@
       }
       .dividing_sample__link_img {
         img {
-          transform: scale(1.04);
+          transform: scale(1.03);
         }
       }
     }
   }
   &:active {
-    .dividing_sample__link_text {
+    .dividing_sample__link_text_wr {
       background: #264D83;
-      span {
-        opacity: 1;
-        visibility: visible;
+      .dividing_sample__link_text {
+        span {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
   }
 }
 .dividing_sample__link_img {
-  height: 400px;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
 
   @media ($desktopSmall) {
-    height: 300px;
+    height: 200px;
   }
   @media ($tablet3) {
-    height: 270px;
+    height: 220px;
   }
   @media ($mobileMiddle) {
-    height: 180px;
+    height: 130px;
   }
 
   img {
+    margin-bottom: -1px;
     width: 100%;
-    height: 100%;
+    height: 101%;
     object-fit: cover;
-    transition: transform 0.8s;
+    transition: transform 0.5s;
+  }
+}
+.dividing_sample__link_text_wr {
+  padding: 28px 40px 30px;
+  background: #2761D1;
+  transition: background 0.25s;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+
+  @media ($desktopSmall) {
+    padding: 14px 10px 16px;
   }
 }
 .dividing_sample__link_text {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 28px 40px 30px;
-  background: #2761D1;
   font-family: 'Golos Text', sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 130%;
   color: #FFFFFF;
-  transition: background 0.25s;
 
   @media ($desktopSmall) {
-    padding: 14px 10px 16px;
     font-size: 26px;
   }
   @media ($tablet3) {

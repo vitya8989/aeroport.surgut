@@ -4,6 +4,12 @@
   @media ($tablet3) {
     padding: 20px 0 0 0;
   }
+
+  &.this--1220 {
+    .container {
+      max-width: 1220px;
+    }
+  }
 }
 .page_top__title {
   margin-top: 15px;
