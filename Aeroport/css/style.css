@@ -1719,6 +1719,11 @@ main.this--blue {
   display: none;
 }
 
+.liveinternet_counter {
+  text-align: right;
+  margin-top: 30px;
+}
+
 .main_top {
   height: 100vh;
   position: relative;
@@ -2338,6 +2343,11 @@ main.this--blue {
   cursor: pointer;
 }
 
+.main_about__slider_next.swiper-button-disabled,
+.main_about__slider_prev.swiper-button-disabled {
+  display: none;
+}
+
 .main_about__slider_next svg,
 .main_about__slider_prev svg {
   width: 100%;
@@ -2654,6 +2664,11 @@ main.this--blue {
   cursor: pointer;
 }
 
+.main_partners__slider_next.swiper-button-disabled,
+.main_partners__slider_prev.swiper-button-disabled {
+  display: none;
+}
+
 .main_partners__slider_next svg,
 .main_partners__slider_prev svg {
   width: 100%;
@@ -2892,7 +2907,7 @@ main.this--blue {
 
 .text_sample__video {
   position: relative;
-  padding-top: 59.32%;
+  padding-top: 56.2712%;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -2906,46 +2921,6 @@ main.this--blue {
      object-fit: cover;
   width: 100%;
   height: 100%;
-}
-
-.text_sample__video_btn {
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 5;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: background 0.25s, opacity 0.25s, visibility 0.25s;
-  -o-transition: background 0.25s, opacity 0.25s, visibility 0.25s;
-  transition: background 0.25s, opacity 0.25s, visibility 0.25s;
-}
-
-.text_sample__video_btn.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.text_sample__video_btn::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 0 10px 17px;
-  border-color: transparent transparent transparent #416FEF;
-  margin-left: 3px;
 }
 
 .text_sample__slider {
@@ -2969,6 +2944,11 @@ main.this--blue {
   cursor: pointer;
   background: url("../img/icons/default_arrow_slider.svg") center/100% 100% no-repeat;
   z-index: 2;
+}
+
+.text_sample__slider_next.swiper-button-disabled,
+.text_sample__slider_prev.swiper-button-disabled {
+  display: none;
 }
 
 .text_sample__slider_next {
@@ -3227,6 +3207,10 @@ main.this--blue {
 
 .flight_board__flight {
   margin-bottom: 10px;
+}
+
+.flight_board__flight.flight .flight__value.this--img {
+  width: 90px;
 }
 
 .schedule__flights {
@@ -4635,9 +4619,9 @@ main.this--blue {
   background: #FFFFFF;
   border: 1px solid rgba(66, 92, 127, 0.6);
   border-radius: 5px;
-  -webkit-transition: background 0.25s, color 0.25s;
-  -o-transition: background 0.25s, color 0.25s;
-  transition: background 0.25s, color 0.25s;
+  -webkit-transition: border 0.25s, color 0.25s, background 0.25s;
+  -o-transition: border 0.25s, color 0.25s, background 0.25s;
+  transition: border 0.25s, color 0.25s, background 0.25s;
 }
 
 .ask__btn:active {
@@ -4648,9 +4632,9 @@ main.this--blue {
 .ask__btn.this--red {
   background: #DB1E35;
   border-radius: 5px;
-  border: none;
   font-weight: 700;
   color: #FFFFFF;
+  border: 1px solid transparent;
 }
 
 .ask__questions {
@@ -4919,9 +4903,9 @@ main.this--blue {
   border: 1px solid #D6D9DC;
   border-radius: 5px;
   padding: 15px 20px;
-  -webkit-transition: border 0.25s;
-  -o-transition: border 0.25s;
-  transition: border 0.25s;
+  -webkit-transition: border 0.25s, background 9999999999999s;
+  -o-transition: border 0.25s, background 9999999999999s;
+  transition: border 0.25s, background 9999999999999s;
 }
 
 .ask_popup__input.error {
@@ -4989,9 +4973,9 @@ main.this--blue {
   font-size: 16px;
   line-height: 27px;
   color: #264D83;
-  -webkit-transition: border 0.25s;
-  -o-transition: border 0.25s;
-  transition: border 0.25s;
+  -webkit-transition: border 0.25s, background 9999999999999s;
+  -o-transition: border 0.25s, background 9999999999999s;
+  transition: border 0.25s, background 9999999999999s;
 }
 
 .ask_popup__textarea:focus {
@@ -5109,6 +5093,9 @@ main.this--blue {
 .thanks__btn.this--transparent {
   border: 1px solid #2D3F57;
   color: #2D3F57;
+  -webkit-transition: border 0.25s, color 0.25s, background 0.25s;
+  -o-transition: border 0.25s, color 0.25s, background 0.25s;
+  transition: border 0.25s, color 0.25s, background 0.25s;
 }
 
 .thanks__btn:active {
@@ -5411,10 +5398,6 @@ main.this--blue {
             transform: scale(1.03);
   }
 
-  .text_sample__video_btn:hover {
-    background: #ffffff;
-  }
-
   .online_registration__company:hover .online_registration__company_name {
     opacity: 1;
     visibility: visible;
@@ -5488,6 +5471,7 @@ main.this--blue {
   .ask__btn:hover {
     background: #416FEF;
     color: #FFFFFF;
+    border: 1px solid transparent;
   }
 
   .ask_popup__input:hover {
@@ -5505,6 +5489,10 @@ main.this--blue {
   .thanks__btn:hover {
     background: #416FEF;
     color: #FFFFFF;
+  }
+
+  .thanks__btn:hover.this--transparent {
+    border: 1px solid transparent;
   }
 
   .auc__main_link:hover {
@@ -5839,12 +5827,6 @@ main.this--blue {
 
   .main_about_slide__content {
     padding: 30px 20px 20px;
-  }
-
-  .dividing_sample__links {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .dividing_sample__link.this--66 {
@@ -6241,6 +6223,14 @@ main.this--blue {
     text-align: left;
   }
 
+  .flight_board__flight.flight .flight__label {
+    width: calc(30% - 15px);
+  }
+
+  .flight_board__flight.flight .flight__value {
+    width: 70%;
+  }
+
   .schedule__head {
     display: none;
   }
@@ -6284,6 +6274,7 @@ main.this--blue {
     width: auto;
     text-align: left;
     margin-top: 8px;
+    text-transform: none;
   }
 
   .schedule__flight_company {
@@ -6360,7 +6351,7 @@ main.this--blue {
   }
 
   .schedule__flight_value {
-    width: 50%;
+    width: 70%;
   }
 
   .schedule__label {
@@ -6369,7 +6360,7 @@ main.this--blue {
     font-size: 16px;
     line-height: 24px;
     color: rgba(66, 92, 127, 0.6);
-    width: calc(50% - 15px);
+    width: calc(30% - 15px);
     margin-right: 15px;
   }
 
@@ -7624,6 +7615,10 @@ main.this--blue {
     line-height: 170%;
   }
 
+  .liveinternet_counter {
+    margin-top: 20px;
+  }
+
   .main_top__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -8116,11 +8111,6 @@ main.this--blue {
     margin-bottom: 10px;
   }
 
-  .text_sample__video_btn {
-    width: 60px;
-    height: 60px;
-  }
-
   .text_sample__slider {
     padding-bottom: 17px;
   }
@@ -8168,6 +8158,14 @@ main.this--blue {
     padding: 10px 15px;
   }
 
+  .flight_board__flight.flight .flight__label {
+    width: calc(50% - 15px);
+  }
+
+  .flight_board__flight.flight .flight__value {
+    width: 50%;
+  }
+
   .schedule__flights {
     margin-top: 30px;
   }
@@ -8185,9 +8183,11 @@ main.this--blue {
   .schedule__flight_value {
     font-size: 15px;
     line-height: 135%;
+    width: 50%;
   }
 
   .schedule__label {
+    width: calc(50% - 15px);
     font-size: 13px;
     line-height: 20px;
   }
@@ -8714,6 +8714,12 @@ main.this--blue {
     min-height: 0;
   }
 
+  .ask_popup__content.active.this--flex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .ask_popup__title {
     font-size: 22px;
     line-height: 135%;
@@ -8802,6 +8808,10 @@ main.this--blue {
     line-height: 135%;
   }
 
+  .thanks__btn {
+    width: 100%;
+  }
+
   .auc .dividing_sample__link_text {
     font-size: 18px;
     line-height: 135%;
@@ -8876,10 +8886,6 @@ main.this--blue {
   }
 
   .thanks {
-    width: 100%;
-  }
-
-  .thanks__btn {
     width: 100%;
   }
 

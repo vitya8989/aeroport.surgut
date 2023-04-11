@@ -7,9 +7,9 @@ if (scheme) {
         container: 'scheme',
         initData: {
             complexId: '5489397701029826',
-            options: {
-                initialRotation: 0
-            }
+            // options: {
+            //     initialRotation: 0
+            // }
         }
     });
 }

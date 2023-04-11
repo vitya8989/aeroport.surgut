@@ -101,6 +101,10 @@
     &.this--flex {
       display: flex;
       align-items: center;
+
+      @media ($tablet3) {
+        justify-content: center;
+      }
     }
   }
 }
@@ -191,7 +195,7 @@
   border: 1px solid #D6D9DC;
   border-radius: 5px;
   padding: 15px 20px;
-  transition: border 0.25s;
+  transition: border 0.25s, background 9999999999999s;
 
   &.error {
     border: 1px solid #DB1E35!important;
@@ -272,7 +276,7 @@
   font-size: 16px;
   line-height: 27px;
   color: #264D83;
-  transition: border 0.25s;
+  transition: border 0.25s, background 9999999999999s;
 
   &:hover {
     @media ($desktopSmallMax) {
@@ -409,7 +413,7 @@
   width: 381px;
   transition: background 0.25s, color 0.25s;
 
-  @media ($mobileMiddle) {
+  @media ($tablet3) {
     width: 100%;
   }
 
@@ -425,12 +429,17 @@
   &.this--transparent {
     border: 1px solid #2D3F57;
     color: #2D3F57;
+    transition: border 0.25s, color 0.25s, background 0.25s;
   }
 
   &:hover {
     @media ($desktopSmallMax) {
       background: #416FEF;
       color: #FFFFFF;
+
+      &.this--transparent {
+        border: 1px solid transparent;
+      }
     }
   }
 

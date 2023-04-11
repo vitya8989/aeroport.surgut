@@ -137,7 +137,7 @@
 }
 .text_sample__video {
   position: relative;
-  padding-top: 59.32%;
+  padding-top: 56.2712%;
   border-radius: 10px;
   overflow: hidden;
 
@@ -151,49 +151,49 @@
     height: 100%;
   }
 }
-.text_sample__video_btn {
-  width: 80px;
-  height: 80px;
-  background: rgba(255, 255, 255, 0.7);
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background 0.25s, opacity 0.25s, visibility 0.25s;
-  @media ($tablet3) {
-    width: 60px;
-    height: 60px;
-  }
-
-  &.hidden {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  &:hover {
-    @media ($desktopSmallMax) {
-      background: #ffffff;
-    }
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 10px 0 10px 17px;
-    border-color: transparent transparent transparent #416FEF;
-    margin-left: 3px;
-  }
-}
+//.text_sample__video_btn {
+//  width: 80px;
+//  height: 80px;
+//  background: rgba(255, 255, 255, 0.7);
+//  position: absolute;
+//  display: block;
+//  top: 50%;
+//  left: 50%;
+//  transform: translate(-50%, -50%);
+//  z-index: 5;
+//  border-radius: 50%;
+//  cursor: pointer;
+//  transition: background 0.25s, opacity 0.25s, visibility 0.25s;
+//  @media ($tablet3) {
+//    width: 60px;
+//    height: 60px;
+//  }
+//
+//  &.hidden {
+//    opacity: 0;
+//    visibility: hidden;
+//  }
+//
+//  &:hover {
+//    @media ($desktopSmallMax) {
+//      background: #ffffff;
+//    }
+//  }
+//
+//  &::after {
+//    content: '';
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//    transform: translate(-50%, -50%);
+//    width: 0;
+//    height: 0;
+//    border-style: solid;
+//    border-width: 10px 0 10px 17px;
+//    border-color: transparent transparent transparent #416FEF;
+//    margin-left: 3px;
+//  }
+//}
 
 .text_sample__slider {
   overflow: hidden;
@@ -220,6 +220,10 @@
   cursor: pointer;
   background: url('../img/icons/default_arrow_slider.svg') center / 100% 100% no-repeat;
   z-index: 2;
+
+  &.swiper-button-disabled {
+    display: none;
+  }
 
   @media ($tablet3) {
     display: none;

@@ -524,3 +524,11 @@
     }
   }
 }
+.liveinternet_counter {
+  text-align: right;
+  margin-top: 30px;
+
+  @media ($tablet3) {
+    margin-top: 20px;
+  }
+}

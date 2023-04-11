@@ -4,19 +4,20 @@ const videoBlocks = document.querySelectorAll('.js_video');
 
 if (videoBlocks.length > 0) {
     videoBlocks.forEach((block) => {
-        let videoBtn = block.querySelector('.js_video_btn');
+        // let videoBtn = block.querySelector('.js_video_btn');
         let video = block.querySelector('video');
+        video.volume = 0.3;
 
-        videoBtn.addEventListener('click', () => {
-            video.play();
-            videoBtn.classList.add('hidden');
-        });
-        block.addEventListener('click', (e) => {
-          if (!e.target.closest('.js_video_btn') && videoBtn.classList.contains('hidden')) {
-              video.pause();
-              videoBtn.classList.remove('hidden');
-          }
-        });
+        // videoBtn.addEventListener('click', () => {
+        //     video.play();
+        //     videoBtn.classList.add('hidden');
+        // });
+        // block.addEventListener('click', (e) => {
+        //   if (!e.target.closest('.js_video_btn') && videoBtn.classList.contains('hidden')) {
+        //       video.pause();
+        //       videoBtn.classList.remove('hidden');
+        //   }
+        // });
     });
 }
 
