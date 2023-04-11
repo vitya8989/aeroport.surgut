@@ -3594,6 +3594,11 @@ main.this--blue {
   overflow: hidden;
 }
 
+.scheme_block iframe {
+  width: 100%;
+  height: 100%;
+}
+
 .online_registration.text_sample ul {
   margin: 13px 0;
   max-width: none;

@@ -494,11 +494,14 @@ if (directionSelect) {
 const scheme = document.getElementById('scheme');
 
 if (scheme) {
-    DG.then(function() {
-        DG.map('scheme', {
-            center: [61.340228, 73.407892],
-            zoom: 17
-        });
+    DG.FloorsWidget.init({
+        container: 'scheme',
+        initData: {
+            complexId: '5489397701029826',
+            options: {
+                initialRotation: 0
+            }
+        }
     });
 }
 ;
