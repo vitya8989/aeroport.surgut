@@ -244,6 +244,15 @@
       }
     }
   }
+  &:focus {
+    background: #DB1E35;
+    color: #ffffff;
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+  }
 
   &:active {
     background: #2D3F57!important;

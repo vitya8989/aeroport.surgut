@@ -58,6 +58,12 @@
       }
     }
   }
+  &:focus {
+    .online_registration__company_name {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 .online_registration__company_img {
   position: relative;
@@ -152,6 +158,9 @@
     @media ($desktopSmallMax) {
       background: #416FEF;
     }
+  }
+  &:focus {
+    background: #416FEF;
   }
   &:active {
     background: #264D83!important;

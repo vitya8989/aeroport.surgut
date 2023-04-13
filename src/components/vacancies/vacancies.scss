@@ -63,6 +63,14 @@
     }
   }
 
+  &:focus {
+    box-shadow: 0 0 20px rgba(37, 59, 71, 0.05);
+    .vacancies__item_btn {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
   }

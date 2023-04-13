@@ -69,6 +69,10 @@
     background: #264D83!important;
   }
 
+  &:focus {
+    background: #416FEF;
+  }
+
   span {
     width: 12px;
     height: 12px;

@@ -120,6 +120,9 @@
       background: #416FEF;
     }
   }
+  &:focus {
+    background: #416FEF;
+  }
   &:active {
     background: #264D83!important;
   }
@@ -188,6 +191,16 @@
         path {
           fill: #ffffff;
         }
+      }
+    }
+  }
+  &:focus {
+    background: #416FEF;
+    color: #ffffff;
+
+    svg {
+      path {
+        fill: #ffffff;
       }
     }
   }

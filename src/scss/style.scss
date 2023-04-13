@@ -142,3 +142,19 @@ main {
 @import "../components/ask/ask_popup/ask_popup";
 
 @import "../components/auc/auc";
+
+.demo_links {
+	padding: 40px 0;
+	display: flex;
+	flex-direction: column;
+}
+.demo_link {
+	color: #000000;
+	font-size: 24px;
+	margin-bottom: 20px;
+	transition: 0.25s;
+
+	&:hover {
+		color: #DB1E35;
+	}
+}

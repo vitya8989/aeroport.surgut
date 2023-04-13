@@ -14,32 +14,34 @@
 
 <body>
 <div class="wrapper">
-    <header class="header this--main">
+    <header class="header">
         @@include('components/header/header.html')
     </header>
-    <main class="main this--main">
-        @@include('components/main/main_top/main_top.html')
-        <section class="run_string_section js_online_table_section">
-<!--            <div class="run_string__img_container">-->
-<!--                <div class="run_string__img">-->
-<!--                    Место добрых встреч и недолгих расставаний-->
-<!--                </div>-->
-<!--            </div>-->
-            <div class="run_string">
-                <marquee class="" direction="left" scrollamount="10">Сообщаем вам об изменениях в расписании полетов</marquee>
-            </div>
-        </section>
-        @@include('components/main/main_online/main_online.html')
-        <section class="main_airport this--main">
-            @@include('components/main/main_airport/main_airport.html')
-        </section>
-        @@include('components/main/main_about/main_about.html')
-        @@include('components/main/main_info/main_info.html')
-        <section class="main_branches this--main">
-            @@include('components/main/main_branches/main_branches.html')
-        </section>
-        @@include('components/main/main_news/main_news.html')
-        @@include('components/main/main_partners/main_partners.html')
+    <main class="main">
+       <div class="container">
+           <div class="demo_links">
+               <a href="https://aeroport.onrender.com/main.html" class="demo_link">Главная</a>
+               <a href="https://aeroport.onrender.com/ask.html" class="demo_link">Задать вопрос</a>
+               <a href="https://aeroport.onrender.com/ask_result.html" class="demo_link">Задать вопрос (результат)</a>
+               <a href="https://aeroport.onrender.com/auc.html" class="demo_link">Авиационный учебный центр</a>
+               <a href="https://aeroport.onrender.com/dividing_sample.html" class="demo_link">Типовая разводящая</a>
+               <a href="https://aeroport.onrender.com/flight_board_in.html" class="demo_link">Табло (Прибытие)</a>
+               <a href="https://aeroport.onrender.com/flight_board_out.html" class="demo_link">Табло (Вылет)</a>
+               <a href="https://aeroport.onrender.com/management.html" class="demo_link">Руководство</a>
+               <a href="https://aeroport.onrender.com/news.html" class="demo_link">Новости</a>
+               <a href="https://aeroport.onrender.com/news_detail.html" class="demo_link">Детальная новости</a>
+               <a href="https://aeroport.onrender.com/online_registration.html" class="demo_link">Онлайн-регистрация</a>
+               <a href="https://aeroport.onrender.com/page_404.html" class="demo_link">404</a>
+               <a href="https://aeroport.onrender.com/schedule_in.html" class="demo_link">Расписание внутренних рейсов</a>
+               <a href="https://aeroport.onrender.com/schedule_out.html" class="demo_link">Распиасние международных рейсов</a>
+               <a href="https://aeroport.onrender.com/scheme.html" class="demo_link">Схема аэропорта</a>
+               <a href="https://aeroport.onrender.com/surgut.html" class="demo_link">Аэропорт Сургут</a>
+               <a href="https://aeroport.onrender.com/text_sample.html" class="demo_link">Типовая текстовая страница</a>
+               <a href="https://aeroport.onrender.com/tracking.html" class="demo_link">Отслеживание груза</a>
+               <a href="https://aeroport.onrender.com/vacancies.html" class="demo_link">Вакансии</a>
+               <a href="https://aeroport.onrender.com/vacancy_detail.html" class="demo_link">Детальная вакансии</a>
+           </div>
+       </div>
     </main>
     @@include('components/footer/footer.html')
 </div>

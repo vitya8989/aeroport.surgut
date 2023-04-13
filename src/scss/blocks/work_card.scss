@@ -120,6 +120,10 @@
         color: #DB1E35;
       }
     }
+
+    &:focus {
+      color: #DB1E35;
+    }
     @media ($tablet3) {
       width: 100%;
     }

@@ -341,6 +341,10 @@
     }
   }
 
+  &:focus {
+    background: #416FEF;
+  }
+
   &:active {
     background: #264D83!important;
   }
@@ -440,6 +444,15 @@
       &.this--transparent {
         border: 1px solid transparent;
       }
+    }
+  }
+
+  &:focus {
+    background: #416FEF;
+    color: #FFFFFF;
+
+    &.this--transparent {
+      border: 1px solid transparent;
     }
   }
 

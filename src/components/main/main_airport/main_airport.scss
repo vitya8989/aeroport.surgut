@@ -157,6 +157,27 @@
       }
     }
   }
+  &:focus {
+    background: #2761D1;
+    .main_airport__link_title {
+      color: #ffffff;
+    }
+    .main_airport__link_text {
+      color: #ffffff;
+    }
+    .main_airport__link_btn {
+      color: #ffffff;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+    .main_airport__link_bg_img {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 .main_airport__link_title {
   font-family: 'Golos Text', sans-serif;

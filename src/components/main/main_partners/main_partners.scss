@@ -68,6 +68,13 @@
       }
     }
   }
+  &:focus {
+    svg {
+      path {
+        fill: #DB1E35;
+      }
+    }
+  }
 }
 .main_partners__slider_next {
   right: -44px;

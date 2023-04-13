@@ -19,8 +19,12 @@
 
   &:hover {
     @media ($desktopSmallMax) {
-      color: #DB1E35
+      color: #DB1E35;
     }
+  }
+
+  &:focus {
+    color: #DB1E35;
   }
 
   @media ($tablet3) {
@@ -130,8 +134,12 @@
 
     &:hover {
       @media ($desktopSmallMax) {
-        color: #DB1E35
+        color: #DB1E35;
       }
+    }
+
+    &:focus {
+      color: #DB1E35;
     }
   }
 }
@@ -159,8 +167,12 @@
 
     &:hover {
       @media ($desktopSmallMax) {
-        color: #DB1E35
+        color: #DB1E35;
       }
+    }
+
+    &:focus {
+      color: #DB1E35;
     }
     @media ($tablet3) {
       margin-left: 0;
@@ -191,6 +203,9 @@
     @media ($desktopSmallMax) {
       background: #416FEF;
     }
+  }
+  &:focus {
+    background: #416FEF;
   }
   &:active {
     background: #264D83!important;

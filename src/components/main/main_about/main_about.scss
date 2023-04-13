@@ -53,6 +53,21 @@
       }
     }
   }
+  &:focus {
+    .main_about_slide__num {
+      color: #2761D1;
+    }
+    .main_about_slide__text {
+      color: #2761D1;
+    }
+    .main_about_slide__content {
+      background: rgba(7, 27, 66, 0.7);
+      ul {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 }
 .main_about_slide__num {
   font-family: 'Golos Text', sans-serif;
@@ -178,6 +193,13 @@
         path {
           fill: #DB1E35;
         }
+      }
+    }
+  }
+  &:focus {
+    svg {
+      path {
+        fill: #DB1E35;
       }
     }
   }

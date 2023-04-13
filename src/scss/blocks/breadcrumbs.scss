@@ -27,8 +27,12 @@
 
   &:hover {
     @media ($desktopSmallMax) {
-      color: #DB1E35
+      color: #DB1E35;
     }
+  }
+
+  &:focus {
+    color: #DB1E35;
   }
 
   @media ($tablet3) {

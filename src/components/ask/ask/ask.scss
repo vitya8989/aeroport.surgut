@@ -51,6 +51,12 @@
     }
   }
 
+  &:focus {
+    background: #416FEF;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+  }
+
   &:active {
     background: #264D83!important;
     color: #FFFFFF;
@@ -62,6 +68,25 @@
     font-weight: 700;
     color: #FFFFFF;
     border: 1px solid transparent;
+
+    &:hover {
+      @media ($desktopSmallMax) {
+        background: #416FEF;
+        color: #FFFFFF;
+        border: 1px solid transparent;
+      }
+    }
+
+    &:focus {
+      background: #416FEF;
+      color: #FFFFFF;
+      border: 1px solid transparent;
+    }
+
+    &:active {
+      background: #264D83!important;
+      color: #FFFFFF;
+    }
   }
 }
 .ask__questions {

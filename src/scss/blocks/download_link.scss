@@ -29,6 +29,20 @@
       }
     }
   }
+  &:focus {
+    background: #416FEF;
+    .download_link__name,
+    .download_link__weight {
+      color: #ffffff;
+    }
+    .download_link__icon {
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
   &:active {
     background: #264D83!important;
   }

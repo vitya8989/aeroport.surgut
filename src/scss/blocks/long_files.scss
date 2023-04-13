@@ -111,6 +111,22 @@
       }
     }
   }
+  &:focus {
+    background: #416FEF;
+    .long_file__name {
+      color: #ffffff;
+    }
+    .long_file__weight {
+      span {
+        color: #ffffff;
+      }
+    }
+    .long_file__date {
+      span {
+        color: #ffffff;
+      }
+    }
+  }
 }
 .long_file__left {
   display: flex;

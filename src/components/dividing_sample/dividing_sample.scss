@@ -89,6 +89,20 @@
       }
     }
   }
+
+  &:focus {
+    .dividing_sample__link_text {
+      span {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    .dividing_sample__link_img {
+      img {
+        transform: scale(1.03);
+      }
+    }
+  }
   &:active {
     .dividing_sample__link_text_wr {
       background: #264D83;

@@ -127,6 +127,9 @@
         color:  #DB1E35;
       }
     }
+    &:focus {
+      color:  #DB1E35;
+    }
 
     @media ($desktopSmall) {
       font-size: 26px;
@@ -180,6 +183,13 @@
           path {
             fill-opacity: 1;
           }
+        }
+      }
+    }
+    &:focus {
+      svg {
+        path {
+          fill-opacity: 1;
         }
       }
     }
@@ -429,6 +439,9 @@
         color: #DB1E35;
       }
     }
+    &:focus {
+      color: #DB1E35;
+    }
   }
 
   @media ($desktopSmall) {
@@ -459,6 +472,9 @@
     @media ($desktopSmallMax) {
       color: #DB1E35;
     }
+  }
+  &:focus {
+    color: #DB1E35;
   }
 }
 
@@ -506,12 +522,19 @@
         color: #DB1E35;
       }
     }
+    &:focus {
+      color: #DB1E35;
+    }
   }
 
   &:hover {
     @media ($desktopSmallMax) {
       color: rgba(255, 255, 255, 1);
     }
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 1);
   }
   @media ($tablet3) {
     font-size: 14px;

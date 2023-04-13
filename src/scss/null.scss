@@ -12,7 +12,8 @@
 	box-sizing: border-box;
 }
 :focus,
-:active {
+:active,
+:focus-visible {
 	outline: none;
 }
 a:focus,

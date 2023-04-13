@@ -450,6 +450,9 @@
   .SumoSelect:hover > .CaptionCont {
     border-color: #264D83;
   }
+  .SumoSelect:focus > .CaptionCont {
+    border-color: #264D83;
+  }
   .SumoSelect > .CaptionCont > label {
     right: 14px;
   }
