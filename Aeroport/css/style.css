@@ -5164,6 +5164,11 @@ main.this--blue {
 }
 
 @media (min-width: 768.1px) {
+  .schedule__direction .SumoSelect > .optWrapper > .options {
+    scrollbar-width: thin;
+    scrollbar-color: #DB1E35;
+  }
+
   .schedule__direction .SumoSelect > .optWrapper > .options::-webkit-scrollbar {
     width: 5px;
     /* ширина всей полосы прокрутки */
