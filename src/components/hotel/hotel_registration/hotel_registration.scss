@@ -1,0 +1,116 @@
+.hotel_registration {
+  background: #ffffff;
+}
+.hotel_registration__title {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: #264D83;
+
+  @media ($desktop) {
+    font-size: 40px;
+  }
+  @media ($tablet3) {
+    font-size: 22px;
+    line-height: 135%;
+  }
+}
+.hotel_registration__items {
+  display: flex;
+  margin-left: -55px;
+  margin-top: 60px;
+
+  @media ($desktopBig) {
+    margin-left: -30px;
+  }
+  @media ($desktop) {
+    margin-bottom: -30px;
+    flex-wrap: wrap;
+  }
+  @media ($tablet3) {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: -20px;
+  }
+}
+.hotel_registration__item {
+  margin-left: 55px;
+  width: calc(20% - 55px);
+  @media ($desktopBig) {
+    margin-left: 30px;
+    width: calc(20% - 30px);
+  }
+  @media ($desktop) {
+    margin-bottom: 30px;
+    width: calc(33.333% - 30px);
+  }
+  @media ($tablet3) {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  span {
+    display: block;
+  }
+
+  span:first-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #2D3F57;
+
+    @media ($tablet3) {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+  span:last-child {
+    font-family: 'Golos Text', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #2D3F57;
+    margin-top: 10px;
+
+    @media ($tablet3) {
+      font-size: 15px;
+      line-height: 135%;
+      margin-top: 5px;
+    }
+  }
+}
+.hotel_registration__links {
+  margin-top: 60px;
+  display: flex;
+
+  @media ($tablet3) {
+    margin-top: 20px;
+    flex-direction: column;
+    margin-bottom: -15px;
+  }
+
+  a {
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #2D3F57;
+
+    @media ($tablet3) {
+      margin-bottom: 15px;
+      margin-right: 0;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    &:hover {
+      @media ($desktopSmallMax) {
+        text-decoration-line: none;
+      }
+    }
+  }
+}

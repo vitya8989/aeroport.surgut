@@ -1,0 +1,157 @@
+.hotel_service {
+  background: #ffffff;
+}
+.hotel_service__title {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: #264D83;
+  max-width: 1300px;
+
+  @media ($desktop) {
+    font-size: 40px;
+  }
+  @media ($tablet3) {
+    font-size: 22px;
+    line-height: 135%;
+  }
+}
+.hotel_service__subtitle {
+  max-width: 1300px;
+  margin-top: 30px;
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D3F57;
+
+  @media ($tablet3) {
+    font-size: 15px;
+    line-height: 135%;
+    margin-top: 15px;
+  }
+}
+.hotel_service__items {
+  margin-top: 60px;
+  display: flex;
+  margin-left: -50px;
+
+  @media ($desktop) {
+    flex-wrap: wrap;
+    margin-bottom: -40px;
+    margin-top: 40px;
+  }
+  @media ($tablet3) {
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: -20px;
+  }
+}
+.hotel_service__item {
+  margin-left: 50px;
+  width: calc(33.333% - 50px);
+
+  @media ($desktop) {
+    width: calc(50% - 50px);
+    margin-bottom: 40px;
+
+    &:last-child {
+      width: calc(100% - 50px);
+    }
+  }
+  @media ($tablet3) {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    &:last-child {
+      width: 100%;
+    }
+  }
+}
+.hotel_service__item_img {
+  width: 80px;
+  height: 80px;
+
+  @media ($tablet3) {
+    width: 70px;
+    height: 70px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.hotel_service__item_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #2D3F57;
+  margin-top: 15px;
+
+  @media ($tablet3) {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+.hotel_service__bottom {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+
+  @media ($desktop) {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+  @media ($tablet3) {
+    margin-top: 30px;
+  }
+}
+.hotel_service__bottom_left {
+  min-width: 0;
+  width: 68.5%;
+
+  @media ($desktop) {
+    width: 100%;
+    margin-top: 20px;
+  }
+  @media ($tablet3) {
+    margin-top: 15px;
+  }
+}
+.hotel_service__slider {
+  .text_sample__slider_next,
+  .text_sample__slider_prev {
+    background: url('../img/icons/blue_arrow.svg') center / 100% 100% no-repeat;
+  }
+}
+.hotel_service__bottom_right {
+  margin-left: 60px;
+  width: calc(31.5% - 60px);
+
+  @media ($desktop) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.hotel_service__bottom_text {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  color: #264D83;
+
+  @media ($desktop) {
+    font-size: 26px;
+  }
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 135%;
+  }
+}

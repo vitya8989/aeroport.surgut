@@ -26,18 +26,20 @@ if (videoBlocks.length > 0) {
 const defaultSliders = document.querySelectorAll('.js_slider');
 
 if (defaultSliders.length > 0) {
-    new Swiper('.js_slider', {
-        speed: 500,
-        slidesPerView: 1,
-        pagination: {
-            el: '.text_sample__slider_pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.text_sample__slider_next',
-            prevEl: '.text_sample__slider_prev',
-        },
+    defaultSliders.forEach((slider) => {
+        new Swiper(slider, {
+            speed: 500,
+            slidesPerView: 1,
+            pagination: {
+                el: '.text_sample__slider_pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.text_sample__slider_next',
+                prevEl: '.text_sample__slider_prev',
+            },
+        });
     });
 }
 

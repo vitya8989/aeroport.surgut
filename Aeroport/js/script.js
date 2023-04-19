@@ -442,18 +442,20 @@ if (videoBlocks.length > 0) {
 const defaultSliders = document.querySelectorAll('.js_slider');
 
 if (defaultSliders.length > 0) {
-    new Swiper('.js_slider', {
-        speed: 500,
-        slidesPerView: 1,
-        pagination: {
-            el: '.text_sample__slider_pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        navigation: {
-            nextEl: '.text_sample__slider_next',
-            prevEl: '.text_sample__slider_prev',
-        },
+    defaultSliders.forEach((slider) => {
+        new Swiper(slider, {
+            speed: 500,
+            slidesPerView: 1,
+            pagination: {
+                el: '.text_sample__slider_pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.text_sample__slider_next',
+                prevEl: '.text_sample__slider_prev',
+            },
+        });
     });
 }
 
@@ -704,6 +706,154 @@ if (askPopup && askAddOpen) {
     });
 }
 ;
+// Прокрутка к номерам по клику
+
+const scrollHotelBtn = document.querySelector('.js_scroll_hotel_btn');
+const hotelRoomsSection = document.querySelector('.js_hotel_rooms');
+
+if (scrollHotelBtn && hotelRoomsSection) {
+    scrollHotelBtn.addEventListener('click', () => {
+        let header = document.querySelector('.header');
+        if (header) {
+            let headerHeight = header.offsetHeight;
+            let onlineTableSectionTop =  hotelRoomsSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+            window.scrollTo({
+                top: onlineTableSectionTop,
+                behavior: "smooth"
+            });
+        }
+    })
+};
+if (document.getElementById("hotel_map")) {
+    ymaps.ready(function () {
+         const hotelMap = new ymaps.Map(document.getElementById("hotel_map"), {
+            center: [61.337046, 73.408996],
+            zoom: 14,
+            controls: ['zoomControl'],
+        });
+        hotelMap.geoObjects.add(new ymaps.Placemark([61.337046, 73.408996], {
+                iconCaption: 'Гостиница «Полёт» в Сургуте'
+            }, {
+                preset: 'islands#blueHomeIcon',
+            }));
+    });
+};
+if (document.querySelector('.hotel_detail_slider')) {
+    new Swiper('.hotel_detail_slider', {
+        speed: 500,
+        slidesPerView: 'auto',
+        loop: true,
+        spaceBetween: 8,
+        slidesToScroll: 1,
+        centeredSlides: true,
+        pagination: {
+            el: '.hotel_detail_slider__pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.hotel_detail_slider__next',
+            prevEl: '.hotel_detail_slider__prev',
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 24,
+            }
+        }
+    });
+}
+
+const orderContent = document.querySelectorAll('.js_order_content');
+
+
+if (orderContent.length > 0) {
+    function setActiveContentOrderForm() {
+        orderContent.forEach((content) => {
+            if (content.dataset.content === 'thanks' && content.classList.contains('active')) {
+                content.classList.remove('active');
+            } else if (content.dataset.content === 'form' && !content.classList.contains('active')) {
+                content.classList.add('active');
+            }
+        });
+    }
+    function setActiveContentOrderThanks() {
+        orderContent.forEach((content) => {
+            if (content.dataset.content === 'thanks' && !content.classList.contains('active')) {
+                content.classList.add('active');
+            } else if (content.dataset.content === 'form' && content.classList.contains('active')) {
+                content.classList.remove('active');
+            }
+        });
+    }
+
+    const orderForm = document.querySelector('.js_order_form');
+
+    if (orderForm) {
+        const orderFormInputs = orderForm.querySelectorAll('.js_order_form_input');
+
+        orderFormInputs.forEach((input) => {
+            input.addEventListener('focus', () => {
+                input.previousElementSibling.classList.add('top_position');
+                if (input.classList.contains('error') && input.nextElementSibling && input.previousElementSibling) {
+                    input.classList.remove('error');
+                    input.previousElementSibling.classList.remove('error');
+                    input.nextElementSibling.classList.remove('error');
+                    input.nextElementSibling.textContent = '';
+                }
+            });
+            input.addEventListener('blur', () => {
+                if (input.value === '') {
+                    input.previousElementSibling.classList.remove('top_position');
+                }
+            });
+        });
+
+        $('.js_tel_mask').inputmask({
+            mask: '+7 (999) 999-9999',
+            showMaskOnHover: false
+        });
+
+        orderForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!validateForm(orderForm)) {
+                return;
+            }
+            // Отправка формы
+            setActiveContentOrderThanks();
+            orderForm.reset();
+        });
+
+        function validateForm (form) {
+            let valid = true;
+            const validateInputs = form.querySelectorAll('.js_order_form_input_required');
+
+            validateInputs.forEach((input) => {
+                if (input.value === '') {
+                    valid = false;
+                    input.classList.add('error');
+                    input.previousElementSibling.classList.add('error');
+                    input.nextElementSibling.classList.add('error');
+                    input.nextElementSibling.textContent = 'Это обязательное поле';
+                }
+                if (input.classList.contains('js_tel_mask') && input.value.indexOf('_') !== -1) {
+                    valid = false;
+                    input.classList.add('error');
+                    input.previousElementSibling.classList.add('error');
+                    input.nextElementSibling.classList.add('error');
+                    input.nextElementSibling.textContent = 'Неверно введен телефон';
+                }
+            });
+
+            return valid;
+        }
+    }
+
+    const orderThanksBtn = document.querySelector('.js_order_thanks_btn');
+
+    orderThanksBtn.addEventListener('click', () => {
+        setActiveContentOrderForm();
+    });
+};
 
 // Только цифры для инпутов
 

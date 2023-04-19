@@ -1,0 +1,96 @@
+.hotel_top {
+  background: radial-gradient(50% 50% at 50% 50%, #2525EF 0%, #14148C 100%);
+  height: 100vh;
+  position: relative;
+
+  .container {
+    height: 100%;
+  }
+}
+.hotel_top__content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 159px 0 90px;
+
+  @media (max-width: 1760px) {
+    padding: 215px 0 90px;
+  }
+  @media ($desktopBig) {
+    padding: 195px 0 60px;
+  }
+
+  @media ($desktopSmall) {
+    padding: 138px 0 40px;
+  }
+  @media ($tablet3) {
+    padding: 109px 0 40px;
+    align-items: stretch;
+  }
+}
+.hotel_top__logo {
+  width: 514px;
+
+  @media ($desktopBig) {
+    width: 400px;
+  }
+
+  @media ($tablet3) {
+    width: 290px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+.hotel_top__title {
+  font-family: 'Golos Text',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 130%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 20px 0;
+
+  @media ($desktopSmall) {
+    font-size: 40px;
+  }
+  @media ($tablet3) {
+    font-size: 24px;
+    line-height: 135%;
+  }
+}
+.hotel_top__text {
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+
+  @media ($desktopSmall) {
+    font-size: 26px;
+  }
+  @media ($tablet3) {
+    font-size: 18px;
+    line-height: 135%;
+  }
+}
+.hotel_top__btn.main_top__btn {
+  position: static;
+  margin: 60px auto 0;
+  transform: translateX(0);
+
+  @media ($desktopBig) {
+    margin: 30px auto 0;
+  }
+  @media ($tablet3) {
+    margin: 100px auto 0;
+    padding: 17.5px 25px;
+  }
+}

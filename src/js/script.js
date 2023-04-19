@@ -9,6 +9,9 @@
 @@include('../components/scheme/scheme.js');
 @@include('../components/ask/ask/ask.js');
 @@include('../components/ask/ask_popup/ask_popup.js');
+@@include('../components/hotel/hotel_top/hotel_top.js');
+@@include('../components/hotel/hotel_contacts/hotel_contacts.js');
+@@include('../components/hotel/hotel_detail/hotel_detail.js');
 
 // Только цифры для инпутов
 

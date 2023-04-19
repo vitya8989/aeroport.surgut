@@ -65,7 +65,7 @@ main {
 	@media ($desktopSmall) {
 		padding: 60px 0;
 	}
-	@media ($desktopSmall) {
+	@media ($tablet3) {
 		padding: 40px 0;
 	}
 	&.this--top {
@@ -142,6 +142,14 @@ main {
 @import "../components/ask/ask_popup/ask_popup";
 
 @import "../components/auc/auc";
+
+@import "../components/hotel/hotel_top/hotel_top";
+@import "../components/hotel/hotel_service/hotel_service";
+@import "../components/hotel/hotel_rooms/hotel_rooms";
+@import "../components/hotel/hotel_contacts/hotel_contacts";
+@import "../components/hotel/hotel_registration/hotel_registration";
+
+@import "../components/hotel/hotel_detail/hotel_detail";
 
 .demo_links {
 	padding: 40px 0;
