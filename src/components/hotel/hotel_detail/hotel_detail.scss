@@ -27,6 +27,13 @@
   line-height: 27px;
   text-align: center;
   color: #416FEF;
+  transition: color 0.25s;
+
+  &:hover {
+    @media ($desktopSmallMax) {
+        color: #DB1E35;
+    }
+  }
   @media ($tablet3) {
     font-size: 13px;
     line-height: 20px;

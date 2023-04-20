@@ -99,6 +99,14 @@
   flex: 1 1 auto;
   padding: 10px 30px 30px;
 
+  &:hover {
+    @media ($desktopSmallMax) {
+      .hotel_rooms__item_title {
+        color: #DB1E35;
+      }
+    }
+  }
+
   @media ($desktop) {
     padding: 10px 20px 20px;
   }
@@ -132,6 +140,7 @@
   line-height: 130%;
   color: #264D83;
   margin-right: 20px;
+  transition: color 0.25s;
 
   @media ($desktop) {
     font-size: 24px;

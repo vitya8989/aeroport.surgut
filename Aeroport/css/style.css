@@ -5745,6 +5745,9 @@ main.this--blue {
   line-height: 130%;
   color: #264D83;
   margin-right: 20px;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .hotel_rooms__item_price {
@@ -5936,6 +5939,9 @@ main.this--blue {
   line-height: 27px;
   text-align: center;
   color: #416FEF;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 .hotel_detail__title {
@@ -6775,9 +6781,17 @@ main.this--blue {
     background: #416FEF;
   }
 
+  .hotel_rooms__item_bottom:hover .hotel_rooms__item_title {
+    color: #DB1E35;
+  }
+
   .hotel_registration__links a:hover {
     -webkit-text-decoration-line: none;
             text-decoration-line: none;
+  }
+
+  .hotel_detail__back_link:hover {
+    color: #DB1E35;
   }
 
   .order_form__input:hover {
@@ -7779,10 +7793,6 @@ main.this--blue {
   .hotel_service__item {
     width: calc(50% - 50px);
     margin-bottom: 40px;
-  }
-
-  .hotel_service__item:last-child {
-    width: calc(100% - 50px);
   }
 
   .hotel_service__bottom {
@@ -10378,10 +10388,6 @@ main.this--blue {
     width: 100%;
     margin-left: 0;
     margin-bottom: 20px;
-  }
-
-  .hotel_service__item:last-child {
-    width: 100%;
   }
 
   .hotel_service__item_img {
